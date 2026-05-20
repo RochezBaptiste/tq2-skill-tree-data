@@ -1,0 +1,85 @@
+import { Active } from "@/app/data/types";
+
+export const temperedArsenal: Active = {
+  id: "tempered-arsenal",
+  tier: 4,
+  name: "Tempered arsenal",
+  description: [
+    "Emit an Aura with a 18m radius",
+    "Aura grants you and allies +168 Armor",
+    "Aura grants you and allies 8% increased base weapon damage",
+  ],
+  cost: {
+    reserved: 40,
+  },
+  cooldown: 0,
+  castTime: 0,
+  critChance: 0,
+  ailmentChance: 0,
+  tags: ["Forge", "Sustained", "Aura", "Buff"],
+  modifiers: [
+    {
+      id: "enhanced-glancing-hits",
+      label: "Enhanced Glancing Hits",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "pierce-retaliation",
+      label: "Pierce Retaliation",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "fire-resistance",
+      label: "Fire Resistance",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "conservation",
+      label: "Conservation",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "fire-imbuement",
+      label: "Fire Imbuement",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "strike-imbuement",
+      label: "Strike Imbuement",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "pierce-imbuement",
+      label: "Pierce Imbuement",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "enhanced-armor",
+      label: "Enhanced Armor",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "device-double-activation",
+      label: "Device Double Activation",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+  ],
+};

@@ -1,0 +1,75 @@
+import { Active } from "@/app/data/types";
+
+export const armorEruption: Active = {
+  id: "armor-eruption",
+  tier: 3,
+  name: "Armor eruption",
+  description: [
+    "Your armor explode dealing X Strike damage in a 3m radius",
+    "You shoot your armor as metal shards in all direction dealing x Pierce damage each.",
+  ],
+  cost: {},
+  cooldown: 6000,
+  castTime: 700,
+  critChance: 5,
+  ailmentChance: 5,
+  tags: ["Forge", "Active", "Area", "Projectile"],
+  modifiers: [
+    {
+      id: "vulnerable-on-hit",
+      label: "Vulnerable on Hit",
+      maxRank: 1,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "enhanced-damage",
+      label: "Enhanced Damage",
+      maxRank: 10,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-ailments",
+      label: "Enhanced Ailments",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "elemental-infusion",
+      label: "Elemental Infusion",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-area",
+      label: "Enhanced Area",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "divine-core-collector",
+      label: "Divine Core Collector",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "cooldown-refresh",
+      label: "Cooldown Refresh",
+      maxRank: 1,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "returning-projectiles",
+      label: "Returning Projectiles",
+      maxRank: 1,
+      cost: 2,
+      perks: [],
+    },
+  ],
+};

@@ -1,0 +1,71 @@
+import { Active } from "@/app/data/types";
+
+export const forceField: Active = {
+  id: "force-field",
+  tier: 4,
+  name: "Force field",
+  description: [
+    "Create a force field at target location with 6m length",
+    "-",
+    "Limit: 1",
+    "-",
+    "Ennemies affected deal 10% less damage and have 20% less Movement speed",
+  ],
+  cost: {},
+  cooldown: 8000,
+  castTime: 700,
+  critChance: 0,
+  ailmentChance: 0,
+  tags: ["Forge", "Active", "Spell", "Area"],
+  modifiers: [
+    {
+      id: "reactivation",
+      label: "Reactivation",
+      maxRank: 1,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "armor-up",
+      label: "Armor Up",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "projectile-glancing",
+      label: "Projectile Glancing",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-control-duration",
+      label: "Enhanced Control Duration",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "skill-enhancement",
+      label: "Skill Enhancement",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "fragile",
+      label: "Fragile",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-device-damage",
+      label: "Enhanced Device Damage",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+  ],
+};

@@ -1,0 +1,92 @@
+import { Active } from "@/app/data/types";
+
+export const preparation: Active = {
+  id: "preparation",
+  tier: 2,
+  name: "Preparation",
+  description: [
+    "Emit an Aura with a 18m radius.",
+    "Aura grants you and allies 20% increased Poison Damage.",
+    "Aura grants you and allies 20% increased Physical Damage.",
+  ],
+  cost: {
+    reserved: 40,
+  },
+  cooldown: 0,
+  castTime: 0,
+  critChance: 0,
+  ailmentChance: 0,
+  tags: ["Rogue", "Sustained", "Aura", "Buff"],
+  modifiers: [
+    {
+      id: "conservation",
+      label: "Conservation",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "pierce-imbuement",
+      label: "Pierce Imbuement",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "poison-imbuement",
+      label: "Poison Imbuement",
+      maxRank: 2,
+      cost: 2,
+      perks: [],
+    },
+    {
+      id: "poison-resistance",
+      label: "Poison Resistance",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-ailments",
+      label: "Enhanced Ailments",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "enhanced-critical-hits",
+      label: "Enhanced Critical Hits",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "weapon-coating",
+      label: "Weapon Coating",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "trail-blazer",
+      label: "Trail Blazer",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "ability-enhancement",
+      label: "Ability Enhancement",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+    {
+      id: "shadow-dagger",
+      label: "Shadow Dagger",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+    },
+  ],
+};
