@@ -144,7 +144,7 @@ export const doomHorn: Active = {
           perLevel: 3,
         },
         {
-          id: "strike-damage",
+          id: "cooldown-reduction",
           label: "10% clooldown reduction",
           baseValue: 6,
           perLevel: 3,
