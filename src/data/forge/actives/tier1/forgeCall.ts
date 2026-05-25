@@ -24,7 +24,14 @@ export const forgeCall: Active = {
       label: "Enhanced Damage",
       maxRank: 10,
       cost: 1,
-      perks: [],
+      perks: [
+        {
+          id: "damage",
+          label: "%1% more damage",
+          baseValue: 10,
+          perLevel: 10,
+        },
+      ],
     },
     {
       id: "enhanced-ailments",

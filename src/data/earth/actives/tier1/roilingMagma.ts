@@ -25,7 +25,9 @@ export const roilingMagma: Active = {
       perks: [
         {
           id: "damage",
-          label: "10% more damage",
+          label: "%1% more damage",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },

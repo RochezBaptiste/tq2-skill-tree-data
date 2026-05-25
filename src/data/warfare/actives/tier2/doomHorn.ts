@@ -8,7 +8,7 @@ export const doomHorn: Active = {
     base: 50,
   },
   cooldown: 0,
-  castTime: 480,
+  castTime: 500,
   critChance: 0,
   ailmentChance: 0,
   description: [
@@ -26,11 +26,15 @@ export const doomHorn: Active = {
         {
           id: "spirit-damage",
           label:
-            "Whenever you hit an enemy affected by Doom Horn, they take 9 Spirit Damage",
+            "Whenever you hit an enemy affected by Doom Horn, they take %1 Spirit Damage",
+          baseValue: 64,
+          perLevel: 32,
         },
         {
           id: "cost",
-          label: "+2 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -43,7 +47,9 @@ export const doomHorn: Active = {
         {
           id: "buff",
           label:
-            "On direct use gain +20% attack & cast speed and +20% damage for 1s",
+            "On direct use gain +%1% attack & cast speed and +%2% damage for 1s",
+          baseValue: [20, 20],
+          perLevel: [10, 20],
         },
       ],
     },
@@ -56,11 +62,15 @@ export const doomHorn: Active = {
         {
           id: "damage-resistance",
           label:
-            "Enemies affected by Doom Horn have an additional -4% damage resistance",
+            "Enemies affected by Doom Horn have an additional -%1% damage resistance",
+          baseValue: 4,
+          perLevel: 4,
         },
         {
           id: "cost",
-          label: "+2 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -74,11 +84,15 @@ export const doomHorn: Active = {
         {
           id: "damage-radius",
           label:
-            "Thundering Horn deals 25% more damage against enemies inside a 2.5m radius",
+            "Thundering Horn deals %1% more damage against enemies inside a 2.5m radius",
+          baseValue: 25,
+          perLevel: 25,
         },
         {
           id: "cost",
-          label: "+5 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -90,7 +104,9 @@ export const doomHorn: Active = {
       perks: [
         {
           id: "radius-cast-speed",
-          label: "+2m radius, 10% less cast speed",
+          label: "+%1m radius, 10% less cast speed",
+          baseValue: 2,
+          perLevel: 1,
         },
       ],
     },
@@ -102,11 +118,15 @@ export const doomHorn: Active = {
       perks: [
         {
           id: "vitality-hit",
-          label: "Next hit after Doom Horn deals 18 Vitality Damage",
+          label: "Next hit after Doom Horn deals %1 Vitality Damage",
+          baseValue: 128,
+          perLevel: 65,
         },
         {
           id: "cost",
-          label: "+2 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -119,11 +139,21 @@ export const doomHorn: Active = {
         {
           id: "strike-damage",
           label:
-            "When directly used deals 6 Strike Damage with 6% ailment chance",
+            "When directly used deals %1 Strike Damage with 25% ailment chance",
+          baseValue: 6,
+          perLevel: 3,
+        },
+        {
+          id: "strike-damage",
+          label: "10% clooldown reduction",
+          baseValue: 6,
+          perLevel: 3,
         },
         {
           id: "cost",
-          label: "+10 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 10,
+          perLevel: 5,
         },
       ],
     },

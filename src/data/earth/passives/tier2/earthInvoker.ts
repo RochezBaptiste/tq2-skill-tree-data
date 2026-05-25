@@ -27,11 +27,19 @@ export const earthInvoker: Passive = {
       details: ["Your summons have 30% increased damage"],
     },
     {
-      id: "summon-health",
+      id: "summon-health-armor",
       name: "Summon health and armor",
       details: [
         "Your summons have 40% increased health",
         "Your summons have 10% increased Armor",
+      ],
+    },
+    {
+      id: "summon-health-resist",
+      name: "Summon health and resist",
+      details: [
+        "Your summons have 40% increased health",
+        "Your summons have +30 Fire resistance",
       ],
     },
   ],

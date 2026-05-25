@@ -35,11 +35,15 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "penetration",
-          label: "8% damage mitigation penetration",
+          label: "%1% damage mitigation penetration",
+          baseValue: 8,
+          perLevel: 8,
         },
         {
           id: "armor-duration",
-          label: "Enemies hit have -67 armor Value for 3s (non-stacking)",
+          label: "Enemies hit have -%1 armor Value for %2s (non-stacking)",
+          baseValue: [1034, 3],
+          perLevel: [517, 0.5],
         },
       ],
     },
@@ -68,11 +72,15 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "damage",
-          label: "5% more damage",
+          label: "%1% more damage",
+          baseValue: 5,
+          perLevel: 5,
         },
         {
           id: "stun-chance",
-          label: "20% chance to stun for 1.5s",
+          label: "%1% chance to stun for 1.5s",
+          baseValue: 20,
+          perLevel: 10,
         },
       ],
     },
@@ -84,7 +92,9 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "damage",
-          label: "2% more damage per Rage",
+          label: "%1% more damage per Rage",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -96,7 +106,9 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "penetration-speed",
-          label: "+1 projectile penetration and 20% more projectile speed",
+          label: "+%1 projectile penetration and %2% more projectile speed",
+          baseValue: [1, 20],
+          perLevel: [1, 20],
         },
         {
           id: "require",
@@ -112,7 +124,9 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "damage-speed",
-          label: "15% more damage but 5% less attack speed",
+          label: "%1% more damage but %2% less attack speed",
+          baseValue: [15, 5],
+          perLevel: [5, 4],
         },
       ],
     },
@@ -124,11 +138,15 @@ export const heavyAttack: Active = {
       perks: [
         {
           id: "ailment",
-          label: "50% more ailment chance",
+          label: "%1% more ailment chance",
+          baseValue: 50,
+          perLevel: 50,
         },
         {
           id: "cost",
-          label: "+1 energy cost",
+          label: "+%1 energy cost",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },

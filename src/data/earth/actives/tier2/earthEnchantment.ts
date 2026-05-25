@@ -14,7 +14,7 @@ export const earthEnchantment: Active = {
   tags: ["Earth", "Sustained", "Aura", "Buff"],
   description: [
     "Emit an Aura with a 18m radius.",
-    "Aura grants you an alliers 20% increased Fire Damage",
+    "Aura grants you and allies 20% increased Fire Damage",
     "Aura grants you and allies 20% increased Physical Damage",
   ],
   modifiers: [
@@ -55,7 +55,7 @@ export const earthEnchantment: Active = {
       perks: [
         {
           id: "damage",
-          label: "Aura grants you and alliers +11 Fire Weapon Damage",
+          label: "Aura grants you and allies +11 Fire Weapon Damage",
         },
         {
           id: "converted",
@@ -75,7 +75,7 @@ export const earthEnchantment: Active = {
       perks: [
         {
           id: "damage",
-          label: "Aura grants you and alliers +11 Strike Weapon Damage",
+          label: "Aura grants you and allies +11 Strike Weapon Damage",
         },
         {
           id: "converted",

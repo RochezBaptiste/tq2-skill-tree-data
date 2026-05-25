@@ -48,12 +48,16 @@ export const sweepingStrike: Active = {
       perks: [
         {
           id: "damage-area",
+          baseValue: 10,
+          perLevel: 10,
           label:
-            "Over 3s while channeling, damage increases by up to 10% and area radius increases by up to 10%",
+            "Over 3s while channeling, damage increases by up to %1% and area radius increases by up to %1%",
         },
         {
           id: "cost",
-          label: "+1 energy cost per second",
+          baseValue: 1,
+          perLevel: 1,
+          label: "+%1 energy cost per second",
         },
       ],
     },
@@ -110,24 +114,27 @@ export const sweepingStrike: Active = {
       perks: [
         {
           id: "rage",
-          label: "Gain Rage on hit (max once every 0.8s)",
+          label: "Gain Rage on hit (max once every %1s)",
+          baseValue: 0.8,
+          perLevel: -0.1,
         },
         {
           id: "damage-rage",
           label: "1% more damage per Rage stack",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cost",
           label: "+2 energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
           id: "whirlwind-cost",
-          label: "+1 energy cost per second (Whirlwind)",
-        },
-        {
-          id: "multipliers",
-          label:
-            "-0.1s on Rage gained, +1% damage per Rage, +2 energy cost, +1 Whirlwind energy cost",
+          label: "+%1 energy cost per second (Whirlwind)",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -136,19 +143,16 @@ export const sweepingStrike: Active = {
       label: "Concentrated Fury",
       maxRank: 5,
       cost: 1,
-      incompatibles: [{ id: "whirlwind", label: "Whirlwind" }],
+      incompatibles: [
+        { id: "whirlwind", label: "Whirlwind" },
+        { id: "rage-gain", label: "Rage Gain" },
+      ],
       perks: [
         {
           id: "consume-rage",
-          label: "Consume all Rage for 10% more damage per Rage consumed",
-        },
-        {
-          id: "damage",
-          label: "+4% damage",
-        },
-        {
-          id: "incompatible",
-          label: "Incompatible with Whirlwind and Rage Gain",
+          label: "Consume all Rage for %1% more damage per Rage consumed",
+          baseValue: 10,
+          perLevel: 4,
         },
       ],
     },
@@ -160,7 +164,9 @@ export const sweepingStrike: Active = {
       perks: [
         {
           id: "edge-damage",
-          label: "20% more damage on the edge",
+          label: "%1% more damage on the edge",
+          baseValue: 20,
+          perLevel: 20,
         },
       ],
     },
@@ -174,7 +180,9 @@ export const sweepingStrike: Active = {
         {
           id: "effect",
           label:
-            "Consumes full Overwhelm for 10% more damage and +80% base Ailment chance",
+            "Consumes full Overwhelm for %1% more damage and +%2% base Ailment chance",
+          baseValue: [10, 80],
+          perLevel: [10, 80],
         },
       ],
     },
@@ -187,7 +195,9 @@ export const sweepingStrike: Active = {
         {
           id: "vitality-dot",
           label:
-            "Enemies hit take 13 Vitality damage per second and have -13% Vitality resistance for 4s",
+            "Enemies hit take %1 Vitality damage per second and have -%2% Vitality resistance for 4s",
+          baseValue: [96, 13],
+          perLevel: [32, 3],
         },
       ],
     },
@@ -200,11 +210,21 @@ export const sweepingStrike: Active = {
         {
           id: "slow-armor",
           label:
-            "Enemies hit are slowed by 6% and have -64 armor value for 3s (non-stacking)",
+            "Enemies hit are slowed by %1% and have -%2 armor value for %3s (non-stacking)",
+          baseValue: [6, 204, 3],
+          perLevel: [6, 204, 1],
         },
         {
           id: "cost",
-          label: "+2 energy cost (+1 for Whirlwind)",
+          label: "+%1 energy cost",
+          baseValue: 2,
+          perLevel: 2,
+        },
+        {
+          id: "whirlwind-cost",
+          label: "+%1 energy cost per second (Whirlwind)",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },

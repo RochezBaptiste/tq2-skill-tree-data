@@ -32,7 +32,9 @@ export const leap: Active = {
         {
           id: "cost-cooldown-reduction",
           label:
-            "25% less Energy Cost, 20% less Cooldown Duration. Your Leap deals no damage.",
+            "%1% less Energy Cost, %2% less Cooldown Duration. Your Leap deals no damage.",
+          baseValue: [25, 20],
+          perLevel: [25, 20],
         },
       ],
     },
@@ -59,12 +61,16 @@ export const leap: Active = {
       perks: [
         {
           id: "damage-landing",
-          label: "10% more Damage on landing",
+          label: "%1% more Damage on landing",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "launch-damage",
           label:
-            "Deal 4 Strike Damage in a 2.0m radius around your launch position",
+            "Deal %1 Strike Damage in a 2.0m radius around your launch position",
+          baseValue: 10,
+          perLevel: 2,
         },
       ],
     },
@@ -77,7 +83,9 @@ export const leap: Active = {
       perks: [
         {
           id: "damage-stagger",
-          label: "10% more Damage, has a secondary 30% Stagger Chance",
+          label: "%1% more Damage, has a secondary %2% Stagger Chance",
+          baseValue: [10, 30],
+          perLevel: [10, 30],
         },
       ],
     },
@@ -89,7 +97,9 @@ export const leap: Active = {
       perks: [
         {
           id: "rage-stacks",
-          label: "Gain 1 Rage stacks if you hit any enemies on landing",
+          label: "Gain %1 Rage stacks if you hit any enemies on landing",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -101,11 +111,15 @@ export const leap: Active = {
       perks: [
         {
           id: "stun-chance",
-          label: "On launch and landing has 30% chance to Stun for 1.5s",
+          label: "On launch and landing has %1% chance to Stun for 1.5s",
+          baseValue: 30,
+          perLevel: 15,
         },
         {
           id: "cooldown-increase",
-          label: "+1s Base Cooldown Duration",
+          label: "+%1s Base Cooldown Duration",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -117,7 +131,9 @@ export const leap: Active = {
       perks: [
         {
           id: "charges",
-          label: "+1 Cooldown Charges",
+          label: "+%1 Cooldown Charges",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cooldown-increase",

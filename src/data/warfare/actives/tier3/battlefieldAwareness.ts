@@ -5,8 +5,8 @@ export const battlefieldAwareness: Active = {
   tier: 3,
   name: "Battlefield Awareness",
   description: [
-    "Emit an Aura with a Xm radius.",
-    "Aura grants you and allies +305 Armor.",
+    "Emit an Aura with a 18m radius.",
+    "Aura grants you and allies +419 Armor.",
   ],
   cost: {
     reserved: 40,
@@ -25,11 +25,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "health-regen",
-          label: "+2 Health Regeneration, 5% increased Health Regeneration",
+          label: "+%1 Health Regeneration, %2% increased Health Regeneration",
+          baseValue: [5, 5],
+          perLevel: [5, 5],
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -41,11 +45,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "glancing-hit",
-          label: "+5% Glancing Hit Chance",
+          label: "+%1% Glancing Hit Chance",
+          baseValue: 5,
+          perLevel: 5,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -57,11 +65,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "retaliation",
-          label: "+4 Pierce Retaliation",
+          label: "+%1 Pierce Retaliation",
+          baseValue: 32,
+          perLevel: 32,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -73,7 +85,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "elemental-resistances",
-          label: "+5% Fire, Cold, Lightning, and Poison Resistance",
+          label: "+%1% Fire, Cold, Lightning, and Poison Resistance",
+          baseValue: 5,
+          perLevel: 5,
+        },
+        {
+          id: "cost",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -85,11 +105,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "vitality-lifesteal",
-          label: "+2 Weapon Vitality Damage, 10% increased Lifesteal",
+          label: "+%1 Weapon Vitality Damage, %2% increased Lifesteal",
+          baseValue: [8, 10],
+          perLevel: [8, 10],
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -101,11 +125,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "barrier-bonus",
-          label: "+15 Free Barrier, +15 Barrier Decay Threshold",
+          label: "+%1 Free Barrier, +%2 Barrier Decay Threshold",
+          baseValue: [40, 40],
+          perLevel: [40, 40],
         },
         {
           id: "cost",
-          label: "+10 Energy Reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -117,11 +145,15 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "energy-regen",
-          label: "+2 Energy Regeneration",
+          label: "+%1 Energy Regeneration",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -133,7 +165,9 @@ export const battlefieldAwareness: Active = {
       perks: [
         {
           id: "reduced-reservation",
-          label: "-20 Energy Reserved",
+          label: "-%1 Energy Reserved",
+          baseValue: 20,
+          perLevel: 20,
         },
       ],
     },
@@ -142,14 +176,47 @@ export const battlefieldAwareness: Active = {
       label: "Strike imbuement",
       maxRank: 2,
       cost: 2,
-      perks: [],
+      perks: [
+        {
+          id: "physical-damage",
+          label: "Aura grants you and allies +%1 increased Physical damage",
+          baseValue: 15,
+          perLevel: 8,
+        },
+        {
+          id: "damage-convertion",
+          label: "Grants you %1%% Weapon Damage converted to Physical Damage.",
+          baseValue: 30,
+          perLevel: 30,
+        },
+        {
+          id: "cost",
+          label: "+%1 Energy reserved",
+          baseValue: 30,
+          perLevel: 30,
+        },
+      ],
     },
     {
       id: "enhanced-armor",
       label: "Enhanced armor",
       maxRank: 5,
       cost: 1,
-      perks: [],
+      perks: [
+        {
+          id: "",
+          label:
+            "Aura grants you and allies +%1 armor and %2% additional armor",
+          baseValue: [503, 5],
+          perLevel: [85, 5],
+        },
+        {
+          id: "cost",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
+        },
+      ],
     },
   ],
 };

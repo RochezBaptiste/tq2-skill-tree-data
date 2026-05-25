@@ -30,9 +30,22 @@ export const stomp: Active = {
       cost: 2,
       perks: [
         {
-          id: "stun-damage-cooldown",
-          label:
-            "+1s stun duration, 15% less damage, +4s base cooldown duration",
+          id: "stun-duration",
+          label: "+%1s stun duration",
+          baseValue: 1,
+          perLevel: 1,
+        },
+        {
+          id: "stun-damage",
+          label: "%1% less damage,",
+          baseValue: 15,
+          perLevel: 15,
+        },
+        {
+          id: "stun-cooldown",
+          label: "+%1s base cooldown duration",
+          baseValue: 4,
+          perLevel: 2,
         },
       ],
     },
@@ -57,7 +70,9 @@ export const stomp: Active = {
         {
           id: "damage-radius-stun",
           label:
-            "Consumes full Overwhelm for 25% more damage, +0.5m radius and +0.4s stun duration",
+            "Consumes full Overwhelm for %1% more damage, +%2m radius and +0.4s stun duration",
+          baseValue: [25, 0.5],
+          perLevel: [25, 0.5],
         },
       ],
     },
@@ -70,7 +85,9 @@ export const stomp: Active = {
         {
           id: "stun-cdr",
           label:
-            "Hitting a channeling enemy applies +0.4s stun duration and reduces cooldown by 20% (once per use)",
+            "Hitting a channeling enemy applies +0.4s stun duration and reduces cooldown by %1% (once per use)",
+          baseValue: 20,
+          perLevel: 20,
         },
       ],
     },
@@ -82,7 +99,9 @@ export const stomp: Active = {
       perks: [
         {
           id: "ailment-damage",
-          label: "+50% added base ailment chance, 10% less damage",
+          label: "+%1% added base ailment chance, %2% less damage",
+          baseValue: [50, 10],
+          perLevel: [50, 8],
         },
       ],
     },
@@ -94,7 +113,9 @@ export const stomp: Active = {
       perks: [
         {
           id: "rage-ailment",
-          label: "Gain 1 Rage on use, +3% ailment chance per Rage",
+          label: "Gain %1 Rage on use, +%2% ailment chance per Rage",
+          baseValue: [1, 3],
+          perLevel: [1, 2],
         },
       ],
     },
@@ -106,7 +127,9 @@ export const stomp: Active = {
       perks: [
         {
           id: "slow-duration",
-          label: "Enemies hit are slowed by 40% for 2.5s",
+          label: "Enemies hit are slowed by %1% for %2s",
+          baseValue: [40, 2.5],
+          perLevel: [10, 1],
         },
       ],
     },

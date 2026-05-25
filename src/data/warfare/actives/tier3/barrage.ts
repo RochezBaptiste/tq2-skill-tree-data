@@ -13,9 +13,9 @@ export const barrage: Active = {
     base: 80,
   },
   cooldown: 0,
-  castTime: 1500,
-  critChance: 5,
-  ailmentChance: 10,
+  castTime: 1170,
+  critChance: 8,
+  ailmentChance: 15,
   tags: ["Warfare", "Active", "Weapon attack", "Exhaust"],
   modifiers: [
     {
@@ -27,7 +27,9 @@ export const barrage: Active = {
       perks: [
         {
           id: "flow-damage",
-          label: "Consumes Flow for 50% more Damage",
+          label: "Consumes Flow to deal %1% additional damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -40,7 +42,9 @@ export const barrage: Active = {
       perks: [
         {
           id: "overwhelm-damage",
-          label: "Consumes full Overwhelm for 50% more Damage",
+          label: "Consumes full Overwhelm for %1% additional damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -53,7 +57,9 @@ export const barrage: Active = {
         {
           id: "conditional-damage",
           label:
-            "Deals 30% more Damage against channeling or incapacitated enemies",
+            "Deals %1% additional damage against channeling or incapacitated enemies",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -67,6 +73,8 @@ export const barrage: Active = {
           id: "ailment-bonus",
           label:
             "First attack has +30% added Base Ailment Chance. 50% more Ailment Chance.",
+          baseValue: 50,
+          perLevel: 50,
         },
       ],
     },
@@ -80,7 +88,9 @@ export const barrage: Active = {
         {
           id: "stacking-bonus",
           label:
-            "Every attack deals 4% more Damage and has 4% more Ailment Chance than the previous",
+            "Every attack deals %1% additional damage and has %1% more Ailment Chance than the previous",
+          baseValue: 4,
+          perLevel: 4,
         },
       ],
     },
@@ -107,7 +117,9 @@ export const barrage: Active = {
         {
           id: "ranged-bonus",
           label:
-            "Projectiles penetrate +1 target, 20% more Projectile Speed. Ranged only.",
+            "Projectiles penetrate +%1 target, %1% more Projectile Speed. Ranged only.",
+          baseValue: [1, 20],
+          perLevel: [1, 20],
         },
       ],
     },
@@ -120,6 +132,8 @@ export const barrage: Active = {
         {
           id: "crit-hit-chance",
           label: "100% more Critical Hit Chance",
+          baseValue: 100,
+          perLevel: 100,
         },
       ],
     },
@@ -133,7 +147,9 @@ export const barrage: Active = {
         {
           id: "store-damage",
           label:
-            "Whenever an enemy hits you, 40% of Damage Taken is stored (up to 135). On use expends it as Pierce Damage.",
+            "Whenever an enemy hits you, %1% of Damage Taken is stored (up to %2). On use expends it as Pierce Damage.",
+          baseValue: [40, 450],
+          perLevel: [20, 150],
         },
       ],
     },
@@ -152,6 +168,8 @@ export const barrage: Active = {
           id: "lunge-effect",
           label:
             "Fast dash attack. Deals 50% more Damage against Channeling, Stuns for 1s and refunds 20% Energy. Requires Dagger, Sword or Spear.",
+          baseValue: [50, 20],
+          perLevel: [50, 20],
         },
       ],
     },

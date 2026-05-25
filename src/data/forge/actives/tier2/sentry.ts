@@ -3,7 +3,7 @@ import { Active } from "@/app/data/types";
 export const sentry: Active = {
   id: "sentry",
   tier: 2,
-  name: "Minefield",
+  name: "Sentry",
   description: [
     "Summon a turret that fires bolts at the closest enemy",
     "On Activation deals X Pierce Damage automatically activates every 0.8s",

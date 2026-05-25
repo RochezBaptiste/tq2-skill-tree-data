@@ -6,7 +6,7 @@ export const rainOfArrows: Active = {
   name: "Rain of Arrows",
   description: [
     "Multiple waves of arrows rain from the skies around the target location.",
-    "Deals 74% Weapon Damage in a 5m radius every 0.6 seconds.",
+    "Deals 75% Weapon Damage in a 5m radius every 0.6 seconds.",
     "Shoots 3 waves.",
     "Requires Bow.",
   ],
@@ -14,7 +14,7 @@ export const rainOfArrows: Active = {
     base: 100,
   },
   cooldown: 0,
-  castTime: 800,
+  castTime: 620,
   critChance: 5,
   ailmentChance: 5,
   tags: ["Warfare", "Active", "Ranged attack", "Area", "Exhaust"],
@@ -28,7 +28,9 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "flow-damage",
-          label: "Consumes Flow for 50% more Damage",
+          label: "Consumes Flow for %1% more Damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -41,7 +43,9 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "overwhelm-damage",
-          label: "Consumes full Overwhelm for 50% more Damage",
+          label: "Consumes full Overwhelm for %1% more Damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -53,15 +57,21 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "extra-waves",
-          label: "+1 additional wave",
+          label: "+%1 additional wave",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "damage-reduction",
-          label: "5% less Damage",
+          label: "%1% less Damage",
+          baseValue: 5,
+          perLevel: 4,
         },
         {
           id: "cost",
-          label: "+10 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -74,10 +84,20 @@ export const rainOfArrows: Active = {
         {
           id: "ailment-bonus",
           label: "+10% added Base Ailment Chance and 50% more Ailment Chance",
+          baseValue: 50,
+          perLevel: 50,
         },
         {
-          id: "damage-cost-penalty",
-          label: "10% less Damage and +2 Energy Cost",
+          id: "damage-penalty",
+          label: "%1% less Damage",
+          baseValue: 10,
+          perLevel: 8,
+        },
+        {
+          id: "cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -89,11 +109,15 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "slow-effect",
-          label: "Enemies hit are slowed by 10% for 1s (non-stackable)",
+          label: "Enemies hit are slowed by %1% for 1s (non-stackable)",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -105,7 +129,10 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "stacking-damage-ailment",
-          label: "2% more Damage and Ailment Chance per hit taken (up to 20%)",
+          label:
+            "Deals %1% additional damage and increases the chance to inflict an ailment each time the target has already been hit by the rain of arrows (up to %2%)",
+          baseValue: [2, 20],
+          perLevel: [1, 10],
         },
       ],
     },
@@ -117,7 +144,10 @@ export const rainOfArrows: Active = {
       perks: [
         {
           id: "single-target-bonus",
-          label: "If hitting a single target, deal 30% Damage a second time",
+          label:
+            "If rain of arrows only hits a single target, deal 30% Damage a second time",
+          baseValue: 30,
+          perLevel: 20,
         },
       ],
     },
