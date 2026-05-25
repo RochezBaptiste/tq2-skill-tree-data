@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "publish": "publish --access public"
+    "publish": "npm publish --access public"
   },
   "license": "MIT",
   "devDependencies": {
