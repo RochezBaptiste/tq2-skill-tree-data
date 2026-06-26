@@ -5,7 +5,7 @@ export const callLightning: Active = {
   tier: 1,
   name: "Call Lightning",
   description: [
-    "Call down lightning at target location dealing 262 Lightning Damage in a 1.5m radius.",
+    "Call down lightning at target location dealing 262 Lightning Damage in a 1.6m radius.",
   ],
   cost: {
     base: 50,
@@ -25,7 +25,9 @@ export const callLightning: Active = {
       perks: [
         {
           id: "overflow-damage",
-          label: "Consumes Flow for 50% more Damage",
+          label: "Consumes Flow for %1% more Damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -38,7 +40,9 @@ export const callLightning: Active = {
       perks: [
         {
           id: "overwhelm-damage",
-          label: "Consumes full Overwhelm for 50% more Damage",
+          label: "Consumes full Overwhelm for %1% more Damage",
+          baseValue: 50,
+          perLevel: 25,
         },
       ],
     },
@@ -55,11 +59,11 @@ export const callLightning: Active = {
         },
         {
           id: "damage",
-          label: "136.8% more damage",
+          label: "140% more damage",
         },
         {
           id: "ailment",
-          label: "136.8% more Ailemnt chance",
+          label: "140% more Ailment chance",
         },
         {
           id: "cost",
@@ -80,11 +84,11 @@ export const callLightning: Active = {
         },
         {
           id: "damage",
-          label: "136.8% more damage",
+          label: "230% more damage",
         },
         {
           id: "ailment",
-          label: "136.8% more Ailemnt chance",
+          label: "230% more Ailment chance",
         },
         {
           id: "duration",
@@ -101,7 +105,9 @@ export const callLightning: Active = {
       perks: [
         {
           id: "charges",
-          label: "+1 Cooldown charges",
+          label: "+%1 Cooldown charges",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -113,7 +119,9 @@ export const callLightning: Active = {
       perks: [
         {
           id: "repeat-effect",
-          label: "Repeats 1 times in 1s intervals",
+          label: "Repeats %1 times in 1s intervals",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "repeat-damage",
@@ -121,7 +129,9 @@ export const callLightning: Active = {
         },
         {
           id: "cost",
-          label: "+30 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 30,
+          perLevel: 10,
         },
       ],
     },
@@ -133,15 +143,21 @@ export const callLightning: Active = {
       perks: [
         {
           id: "delayed-damage",
-          label: "25% more Damage",
+          label: "%1% more Damage",
+          baseValue: 25,
+          perLevel: 25,
         },
         {
           id: "delayed-hit",
-          label: "Hits after 0.8s",
+          label: "Hits after %1s",
+          baseValue: 0.8,
+          perLevel: 0.6,
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -154,11 +170,15 @@ export const callLightning: Active = {
         {
           id: "lightning-strike-chance",
           label:
-            "When directly used, enemies in a 3.0m radius around target location have 20% chance to be hit by Lightning Strike",
+            "When directly used, enemies in a 3.0m radius around target location have %1% chance to be hit by Lightning Strike",
+          baseValue: 20,
+          perLevel: 10,
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -170,15 +190,21 @@ export const callLightning: Active = {
       perks: [
         {
           id: "rage-gain",
-          label: "Gain 1% Rage on the first hit",
+          label: "Gain %1% Rage on the first hit",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "rage-damage",
-          label: "Deals 1% more Damage per Rage",
+          label: "Deals %1% more Damage per Rage",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -190,7 +216,9 @@ export const callLightning: Active = {
       perks: [
         {
           id: "ailment-chance",
-          label: "+50% added Ailment Chance",
+          label: "+%1% added Ailment Chance",
+          baseValue: 25,
+          perLevel: 25,
         },
       ],
     },
@@ -202,15 +230,21 @@ export const callLightning: Active = {
       perks: [
         {
           id: "overload-gain",
-          label: "On use gain 1 Overload",
+          label: "On use gain %1 Overload",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "overload-damage-speed",
-          label: "10% more Damage and 10% more Cast speed",
+          label: "%1% more Damage and %1% more Cast speed",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "overload-cost",
-          label: "10% less Energy cost",
+          label: "%1% less Energy cost",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -223,11 +257,15 @@ export const callLightning: Active = {
         {
           id: "drain-stats",
           label:
-            "Deals 65 Energy damage in a 2.5m radius and enemies hit lose 20 Energy",
+            "Deals %1 Energy damage in a 2.5m radius and enemies hit lose %1 Energy",
+          baseValue: [96, 20],
+          perLevel: [65, 5],
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },

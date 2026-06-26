@@ -17,6 +17,12 @@ import {
   heatOfTheForge,
   improvedDevices,
 } from "@/app/data/forge/passives/tier4";
+import {
+  annealedwrath,
+  causticFumes,
+  ironDomain,
+  livingArmament,
+} from "@/app/data/forge/passives/tier5";
 import { Passive, Tier } from "@/app/data/types";
 
 export const passiveTiers: Tier<Passive>[] = [
@@ -46,5 +52,9 @@ export const passiveTiers: Tier<Passive>[] = [
   {
     level: 4,
     skills: [improvedDevices, heatOfTheForge, elementalEngraving],
+  },
+  {
+    level: 5,
+    skills: [annealedwrath, livingArmament, causticFumes, ironDomain],
   },
 ];

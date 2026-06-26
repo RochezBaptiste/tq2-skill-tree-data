@@ -18,6 +18,13 @@ import {
   deepFreeze,
   lightningBringer,
 } from "@/app/data/storm/passives/tier4";
+import {
+  coldDomain,
+  lightningDomain,
+  relentlessInvoker,
+  unerringStorm,
+  wailingWinds,
+} from "@/app/data/storm/passives/tier5";
 import { Passive, Tier } from "@/app/data/types";
 
 export const passiveTiers: Tier<Passive>[] = [
@@ -48,5 +55,15 @@ export const passiveTiers: Tier<Passive>[] = [
   {
     level: 4,
     skills: [deepFreeze, lightningBringer, arcaneShielding],
+  },
+  {
+    level: 5,
+    skills: [
+      relentlessInvoker,
+      unerringStorm,
+      wailingWinds,
+      lightningDomain,
+      coldDomain,
+    ],
   },
 ];

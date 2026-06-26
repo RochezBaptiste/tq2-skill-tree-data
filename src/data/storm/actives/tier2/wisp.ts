@@ -17,7 +17,7 @@ export const wisp: Active = {
     reserved: 60,
   },
   cooldown: 4000,
-  castTime: 670,
+  castTime: 700,
   critChance: 0,
   ailmentChance: 0,
   tags: ["Storm", "Active", "Spell", "Sustained", "Lesser Summon"],

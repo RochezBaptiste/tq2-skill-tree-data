@@ -120,7 +120,7 @@ export const sweepingStrike: Active = {
         },
         {
           id: "damage-rage",
-          label: "1% more damage per Rage stack",
+          label: "%1% more damage per Rage stack",
           baseValue: 1,
           perLevel: 1,
         },

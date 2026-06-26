@@ -17,6 +17,13 @@ import {
   cremation,
   concussiveForce,
 } from "@/app/data/earth/passives/tier4";
+import {
+  cinderbreak,
+  erosion,
+  fireDomain,
+  stonebornArmy,
+  stoneDomain,
+} from "@/app/data/earth/passives/tier5";
 import { Passive, Tier } from "@/app/data/types";
 
 export const passiveTiers: Tier<Passive>[] = [
@@ -41,5 +48,9 @@ export const passiveTiers: Tier<Passive>[] = [
   {
     level: 4,
     skills: [cremation, concussiveForce, stableBarrier],
+  },
+  {
+    level: 5,
+    skills: [cinderbreak, stonebornArmy, erosion, fireDomain, stoneDomain],
   },
 ];

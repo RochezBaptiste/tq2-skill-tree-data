@@ -26,11 +26,15 @@ export const stormNimbus: Active = {
       perks: [
         {
           id: "energy-regen",
-          label: "Aura grants you and allies: +2 Energy regeneration",
+          label: "Aura grants you and allies: +%1 Energy regeneration",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
           id: "energy-reserved",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -42,7 +46,9 @@ export const stormNimbus: Active = {
       perks: [
         {
           id: "reduced-reservation",
-          label: "-20 Energy reserved",
+          label: "-%1 Energy reserved",
+          baseValue: 20,
+          perLevel: 20,
         },
       ],
     },
@@ -54,15 +60,21 @@ export const stormNimbus: Active = {
       perks: [
         {
           id: "cold-conversion",
-          label: "Aura grants you an allies +11 Cold Weapon Damage.",
+          label: "Aura grants you an allies +%1 Cold Weapon Damage.",
+          baseValue: 15,
+          perLevel: 8,
         },
         {
           id: "cold-damage",
-          label: "Grants you 30% Weapon Damage converted to Cold Damage.",
+          label: "Grants you %1% Weapon Damage converted to Cold Damage.",
+          baseValue: 30,
+          perLevel: 30,
         },
         {
           id: "cost",
-          label: "+30 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -74,15 +86,21 @@ export const stormNimbus: Active = {
       perks: [
         {
           id: "lightning-conversion",
-          label: "Aura grants you an allies +11 Lightning Weapon Damage.",
+          label: "Aura grants you an allies +%1 Lightning Weapon Damage.",
+          baseValue: 15,
+          perLevel: 8,
         },
         {
           id: "lightning-damage",
-          label: "Grants you 30% Weapon Damage converted to Lightning Damage.",
+          label: "Grants you %1% Weapon Damage converted to Lightning Damage.",
+          baseValue: 30,
+          perLevel: 30,
         },
         {
           id: "cost",
-          label: "+30 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -95,11 +113,15 @@ export const stormNimbus: Active = {
         {
           id: "lightning-res-stats",
           label:
-            "Aura grants you and allies +15% Lightning Resistance and +1% Max Lightning Resistance",
+            "Aura grants you and allies +%1% Lightning Resistance and +%2% Max Lightning Resistance",
+          baseValue: [15, 1],
+          perLevel: [15, 1],
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -112,11 +134,15 @@ export const stormNimbus: Active = {
         {
           id: "cold-res-stats",
           label:
-            "Aura grants you and allies +15% Cold Resistance and +1% Max Cold Resistance",
+            "Aura grants you and allies +%1% Cold Resistance and +%2% Max Cold Resistance",
+          baseValue: [15, 1],
+          perLevel: [15, 1],
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -128,15 +154,21 @@ export const stormNimbus: Active = {
       perks: [
         {
           id: "ailment-chance",
-          label: "Aura grants you an allies 10% increased Ailment chance",
+          label: "Aura grants you an allies %1% increased Ailment chance",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "ailment-power",
-          label: "Aura grants you an allies 5% increased Ailment power",
+          label: "Aura grants you an allies %1% increased Ailment power",
+          baseValue: 5,
+          perLevel: 5,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -148,13 +180,23 @@ export const stormNimbus: Active = {
       cost: 1,
       perks: [
         {
+          id: "lightning-strike-damage",
+          label: "Grants you %1% increased Lightning Strike Damage.",
+          baseValue: 20,
+          perLevel: 20,
+        },
+        {
           id: "lightning-strike-proc",
           label:
-            "Grants you 20% increased Lightning Strike Damage. Every 2s, you have 15% chance to strike random enemy in aura.",
+            "Every 2s, you have %1% chance to strike random enemy in aura.",
+          baseValue: 15,
+          perLevel: 15,
         },
         {
           id: "cost",
-          label: "+15 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 15,
+          perLevel: 15,
         },
       ],
     },
@@ -167,11 +209,15 @@ export const stormNimbus: Active = {
         {
           id: "retaliation-freeze",
           label:
-            "When an ennemy hits you within a 3m range, deal 109 Cold Damage to it with a 20% Ailment chance and 10% chance to Freeze for 1s",
+            "When an ennemy hits you within a 3m range, deal 161 Cold Damage to it with a %1% Ailment chance and %2% chance to Freeze for 1s",
+          baseValue: [20, 10],
+          perLevel: [10, 5],
         },
         {
           id: "cost",
-          label: "+15 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 15,
+          perLevel: 15,
         },
       ],
     },
@@ -184,11 +230,15 @@ export const stormNimbus: Active = {
         {
           id: "aura-damage",
           label:
-            "Aura grants an additional 8% increased Cold and Lightning Damage",
+            "Aura grants an additional %1% increased Cold and Lightning Damage",
+          baseValue: 8,
+          perLevel: 8,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },

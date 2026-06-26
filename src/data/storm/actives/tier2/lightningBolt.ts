@@ -5,7 +5,7 @@ export const lightningBolt: Active = {
   tier: 2,
   name: "Lightning Bolt",
   description: [
-    "Throw a bolt of lightning that deals 262 Lightning Damage.",
+    "Throw a bolt of lightning that deals 385 Lightning Damage.",
     "Infinite Penetration.",
     "Always fires 1 Projectile. Additional Projectiles instead split off on the first hit. Additional Projectiles deal 60% less Damage.",
     "On use gain Overwhelm while you have an Overwhelm skill equipped.",
@@ -14,9 +14,9 @@ export const lightningBolt: Active = {
     base: 10,
   },
   cooldown: 0,
-  castTime: 670,
+  castTime: 700,
   critChance: 5,
-  ailmentChance: 10,
+  ailmentChance: 15,
   tags: ["Storm", "Active", "Spell", "Basic", "Projectile", "Lightning"],
   modifiers: [
     {
@@ -58,11 +58,15 @@ export const lightningBolt: Active = {
         },
         {
           id: "lightning-damage",
-          label: "44 Lightning damage per stack",
+          label: "%1 Lightning damage per stack",
+          baseValue: 64,
+          perLevel: 32,
         },
         {
           id: "cost",
-          label: "+1 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -78,7 +82,9 @@ export const lightningBolt: Active = {
         },
         {
           id: "rage-damage",
-          label: "1% more Damage per Rage",
+          label: "%1% more Damage per Rage",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -90,11 +96,15 @@ export const lightningBolt: Active = {
       perks: [
         {
           id: "projectiles",
-          label: "+1 additional Projectiles",
+          label: "+%1 additional Projectiles",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cost",
-          label: "+1 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -133,11 +143,15 @@ export const lightningBolt: Active = {
       perks: [
         {
           id: "strike-chance",
-          label: "10% chance to trigger Lightning Strike on hit",
+          label: "%1% chance to trigger Lightning Strike on hit",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "cost",
-          label: "+1 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -149,8 +163,9 @@ export const lightningBolt: Active = {
       perks: [
         {
           id: "overload-buff",
-          label:
-            "On use gain 1 Overload: 10% more Damage, +1 additional Projectiles",
+          label: "On use gain %1 Overload, +%1 additional Projectiles",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },

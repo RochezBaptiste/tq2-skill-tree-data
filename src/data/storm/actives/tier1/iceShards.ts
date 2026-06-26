@@ -5,7 +5,7 @@ export const iceShards: Active = {
   tier: 1,
   name: "Ice Shards",
   description: [
-    "Fire 5 ice shards in a cone dealing 116-160 Cold Damage each.",
+    "Fire 5 ice shards in a cone dealing 160-224 Cold Damage each.",
     "Additional hits against the same enemy deals 80% less Damage.",
     "On use gain Overwhelm while you have an Overwhelm skill equipped.",
   ],
@@ -13,9 +13,9 @@ export const iceShards: Active = {
     base: 10,
   },
   cooldown: 0,
-  castTime: 670,
+  castTime: 700,
   critChance: 5,
-  ailmentChance: 10,
+  ailmentChance: 15,
   tags: ["Storm", "Active", "Spell", "Basic", "Projectile", "Cold"],
   modifiers: [
     {
@@ -26,11 +26,15 @@ export const iceShards: Active = {
       perks: [
         {
           id: "extra-projectiles",
-          label: "+1 additional Projectiles",
+          label: "+%1 additional Projectiles",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cost",
-          label: "+1 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -42,7 +46,9 @@ export const iceShards: Active = {
       perks: [
         {
           id: "penetration-stats",
-          label: "+1 projectile penetration",
+          label: "+%1 projectile penetration",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "penetration-damage",
@@ -59,7 +65,9 @@ export const iceShards: Active = {
         {
           id: "freeze-proc",
           label:
-            "When you hit a Frozen target, it cause an explosion dealing 131 Cold damage in a 2.0m radius",
+            "When you hit a Frozen target, it cause an explosion dealing %1 Cold damage in a %2m radius",
+          baseValue: [193, 2],
+          perLevel: [64, 0.6],
         },
       ],
     },
@@ -130,7 +138,9 @@ export const iceShards: Active = {
       perks: [
         {
           id: "energy-scaling",
-          label: "Deals additional Cold Damage equal to 7.3% reserved Energy",
+          label: "Deals additional Cold Damage equal to %1% reserved Energy",
+          baseValue: 9.8,
+          perLevel: 6.5,
         },
       ],
     },

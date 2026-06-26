@@ -20,6 +20,13 @@ import {
   surgicalPrecision,
   torment,
 } from "@/app/data/rogue/passives/tier4";
+import {
+  bladeDomain,
+  deathAngle,
+  lacerate,
+  mortalBlades,
+  poisonDomain,
+} from "@/app/data/rogue/passives/tier5";
 import { Passive, Tier } from "@/app/data/types";
 
 export const passiveTiers: Tier<Passive>[] = [
@@ -56,5 +63,9 @@ export const passiveTiers: Tier<Passive>[] = [
       torment,
       evasiveManeuvers,
     ],
+  },
+  {
+    level: 5,
+    skills: [deathAngle, mortalBlades, lacerate, poisonDomain, bladeDomain],
   },
 ];

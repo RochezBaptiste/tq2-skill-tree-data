@@ -5,16 +5,16 @@ export const iceNova: Active = {
   tier: 2,
   name: "Ice Nova",
   description: [
-    "Deal 387 Cold Damage in a 4.0m radius around you.",
-    "25% chance to Freeze for 1.2s.",
+    "Deal 578 Cold Damage in a 4.0m radius around you.",
+    "25% chance to Freeze for 1.0s.",
   ],
   cost: {
     base: 50,
   },
   cooldown: 6000,
-  castTime: 350,
+  castTime: 370,
   critChance: 5,
-  ailmentChance: 100,
+  ailmentChance: 152,
   tags: ["Storm", "Active", "Spell", "Area", "Cold"],
   modifiers: [
     {
@@ -38,11 +38,15 @@ export const iceNova: Active = {
       perks: [
         {
           id: "freeze-guarantee",
-          label: "Always Freezes, +1s Base Freeze Duration",
+          label: "Always Freezes, +%1s Base Freeze Duration",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
           id: "cooldown-increase",
-          label: "+7s Base Cooldown Duration",
+          label: "+%1s Base Cooldown Duration",
+          baseValue: 7,
+          perLevel: 3,
         },
       ],
     },
@@ -55,7 +59,9 @@ export const iceNova: Active = {
       perks: [
         {
           id: "charges",
-          label: "+1 Cooldown Charge",
+          label: "+%1 Cooldown Charge",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -66,12 +72,22 @@ export const iceNova: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage-freeze-duration",
-          label: "20% more Damage and +0.2s Freeze Duration",
+          id: "damage",
+          label: "%1% more Damage",
+          baseValue: 20,
+          perLevel: 20,
+        },
+        {
+          id: "freeze-duration",
+          label: "+%1s Freeze Duration",
+          baseValue: 0.2,
+          perLevel: 0.2,
         },
         {
           id: "cost",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -83,7 +99,9 @@ export const iceNova: Active = {
       perks: [
         {
           id: "ailment-chance",
-          label: "+60% added Base Ailment Chance",
+          label: "+%1% added Base Ailment Chance",
+          baseValue: 60,
+          perLevel: 60,
         },
       ],
     },
@@ -119,8 +137,25 @@ export const iceNova: Active = {
       perks: [
         {
           id: "cone-conversion",
-          label:
-            "Turns into a 60 degree cone. +1m radius, 20% more Damage, +5% added chance to Freeze.",
+          label: "Turns into a 60 degree cone",
+        },
+        {
+          id: "radius",
+          label: "+%1m radius",
+          baseValue: 1,
+          perLevel: 0.5,
+        },
+        {
+          id: "damage",
+          label: "%1% more Damage",
+          baseValue: 20,
+          perLevel: 10,
+        },
+        {
+          id: "chance-freeze",
+          label: "+%1% added chance to Freeze.",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -133,7 +168,9 @@ export const iceNova: Active = {
         {
           id: "channeling-bonus",
           label:
-            "Deals 50% more Damage to channeling enemies and recovers 20% Cooldown if at least one channeling enemy was hit",
+            "Deals %1% more Damage to channeling enemies and recovers %2% Cooldown if at least one channeling enemy was hit",
+          baseValue: [50, 20],
+          perLevel: [50, 20],
         },
       ],
     },
@@ -145,7 +182,9 @@ export const iceNova: Active = {
       perks: [
         {
           id: "hit-explosion",
-          label: "Enemies hit explode for 65 Cold Damage in a 1.2m radius",
+          label: "Enemies hit explode for 96 Cold Damage in a %1m radius",
+          baseValue: 1.2,
+          perLevel: 0.6,
         },
       ],
     },
@@ -158,7 +197,7 @@ export const iceNova: Active = {
         {
           id: "stats",
           label:
-            "When this skill hits a Wisp you control sacrifice 10% of its Health to cause an explosion dealing 262 Cold damage in a 3m radius around it",
+            "When this skill hits a Wisp you control sacrifice 10% of its Health to cause an explosion dealing 385 Cold damage in a 3m radius around it",
         },
       ],
     },

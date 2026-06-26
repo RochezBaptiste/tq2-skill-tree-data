@@ -22,6 +22,13 @@ import {
   unyielding,
   stategos,
 } from "@/app/data/warfare/passives/tier4";
+import {
+  brutalImpact,
+  carnage,
+  precisionStrikes,
+  sanguineDomain,
+  warDomain,
+} from "@/app/data/warfare/passives/tier5";
 
 export const passiveTiers: Tier<Passive>[] = [
   {
@@ -45,5 +52,15 @@ export const passiveTiers: Tier<Passive>[] = [
   {
     level: 4,
     skills: [frenziedRage, eviscerate, unyielding, stategos],
+  },
+  {
+    level: 5,
+    skills: [
+      carnage,
+      precisionStrikes,
+      brutalImpact,
+      warDomain,
+      sanguineDomain,
+    ],
   },
 ];
