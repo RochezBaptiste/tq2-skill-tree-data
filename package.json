@@ -1,6 +1,6 @@
 {
   "name": "tq2-skill-tree-data",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "TQ2 skill tree data",
   "type": "module",
   "main": "./dist/index.cjs",

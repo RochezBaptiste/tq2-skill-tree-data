@@ -41,6 +41,7 @@ export type Modifier = {
   requires?: { id: string; label: string }[];
   incompatibles?: { id: string; label: string }[];
   perks: Perk[];
+  masteries?: string[];
 };
 
 export type Perk = {

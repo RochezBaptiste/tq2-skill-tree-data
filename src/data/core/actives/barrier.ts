@@ -80,12 +80,15 @@ export const barrier: Active = {
       cost: 1,
       perks: [],
     },
+
+    //  Masteries
     {
       id: "rage-gain",
       label: "Rage Gain",
       maxRank: 3,
       cost: 1,
       perks: [],
+      masteries: ["storm", "warfare"],
     },
   ],
 };

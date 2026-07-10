@@ -9,14 +9,14 @@ export const elementalUtilization: Passive = {
   stats: [
     {
       id: "elemental-damage",
-      label: "%1 increased Elemental damage",
+      label: "%1% increased Elemental damage",
       baseValue: 2,
       perLevel: 2,
     },
     {
       id: "elemental-consume",
       label:
-        "%1 increased Elemental damage if you have consumed Elemental fusion in the last 5s",
+        "%1% increased Elemental damage if you have consumed Elemental fusion in the last 5s",
       baseValue: 2,
       perLevel: 2,
     },

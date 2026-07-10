@@ -8,7 +8,7 @@ export const dodge: Active = {
   cooldown: 6000,
   castTime: 250,
   description: [
-    "Wuickly dash a short distance toward the target location.",
+    "Quickly dash a short distance toward the target location.",
     "Wearing Light armor or Medium armor grants increased Dodge cooldown rate",
   ],
   tags: ["Active", "Movement"],
@@ -49,12 +49,39 @@ export const dodge: Active = {
       cost: 1,
       perks: [],
     },
+
+    //  Masteries
+    {
+      id: "fire-explosion",
+      label: "Fire explosion",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+      masteries: ["earth"],
+    },
+    {
+      id: "flow",
+      label: "Flow",
+      maxRank: 1,
+      cost: 2,
+      perks: [],
+      masteries: ["rogue"],
+    },
     {
       id: "cold-explosion",
       label: "Cold Explosion",
       maxRank: 3,
       cost: 1,
       perks: [],
+      masteries: ["storm"],
+    },
+    {
+      id: "dash-attack",
+      label: "Dash Attack",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+      masteries: ["rogue", "warfare"],
     },
   ],
 };
