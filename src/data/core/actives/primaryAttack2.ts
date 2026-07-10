@@ -87,12 +87,46 @@ export const primaryAttack2: Active = {
       cost: 2,
       perks: [],
     },
+    //  Masteries
+    {
+      id: "fire-explosion",
+      label: "Fire explosion",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+      masteries: ["earth", "rogue"],
+    },
+    {
+      id: "fragmentation",
+      label: "Fragmentation",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+      masteries: ["warfare","rogue"],
+    },
+    {
+      id: "toxicity",
+      label: "Toxicity",
+      maxRank: 5,
+      cost: 1,
+      perks: [],
+      masteries: ["rogue"],
+    },
+    {
+      id: "heavy-impact",
+      label: "Heavy impact",
+      maxRank: 3,
+      cost: 1,
+      perks: [],
+      masteries: ["earth", "warfare"],
+    },
     {
       id: "onslaught",
       label: "Onslaught",
       maxRank: 3,
       cost: 1,
       perks: [],
+      masteries: ["storm", "warfare"],
     },
     {
       id: "lightning-strike",
@@ -100,6 +134,7 @@ export const primaryAttack2: Active = {
       maxRank: 3,
       cost: 1,
       perks: [],
+      masteries: ["storm"],
     },
     {
       id: "frost-explosion",
@@ -107,6 +142,7 @@ export const primaryAttack2: Active = {
       maxRank: 3,
       cost: 1,
       perks: [],
+      masteries: ["storm"],
     },
   ],
 };

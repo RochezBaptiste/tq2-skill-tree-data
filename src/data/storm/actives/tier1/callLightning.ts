@@ -98,7 +98,7 @@ export const callLightning: Active = {
     },
     {
       id: "cooldown-chance",
-      label: "Cooldown Chance",
+      label: "Cooldown Charge",
       maxRank: 2,
       cost: 2,
       requires: [{ id: "cooldown", label: "Cooldown" }],
@@ -250,7 +250,7 @@ export const callLightning: Active = {
     },
     {
       id: "energy-drain",
-      label: "Energy Drain",
+      label: "Energy Damage",
       maxRank: 5,
       cost: 1,
       perks: [

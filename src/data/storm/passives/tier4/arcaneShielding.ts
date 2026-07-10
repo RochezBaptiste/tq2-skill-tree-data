@@ -9,13 +9,13 @@ export const arcaneShielding: Passive = {
   stats: [
     {
       id: "increase-barrier",
-      label: "1% increased Barrier",
+      label: "%1% increased Barrier",
       baseValue: 6,
       perLevel: 6,
     },
     {
       id: "barrier-regeneration",
-      label: "+1% Barrier regeneration",
+      label: "+%1% Barrier regeneration",
       baseValue: 7,
       perLevel: 6,
     },

@@ -28,12 +28,12 @@ export const hardenedBulwark: Passive = {
     },
     {
       id: "minimum-bulwark",
-      name: "Bulwark",
+      name: "Minimum Bulwark",
       details: ["+3 Minimum Bulwark while you have a shield equipped"],
     },
     {
       id: "maximum-bulwark ",
-      name: "Device activation",
+      name: "Maximum Bulwark",
       details: ["+2 Maximum Bulwark"],
     },
   ],

@@ -9,7 +9,7 @@ export const lightningBringer: Passive = {
   stats: [
     {
       id: "strike-damage",
-      label: "+1% Lightning Strike damage",
+      label: "+%1% Lightning Strike damage",
       baseValue: 9,
       perLevel: 8,
     },

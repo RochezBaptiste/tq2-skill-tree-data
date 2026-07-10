@@ -17,6 +17,7 @@ import {
   arcaneShielding,
   deepFreeze,
   lightningBringer,
+  stormPiercer,
 } from "@/app/data/storm/passives/tier4";
 import {
   coldDomain,
@@ -54,7 +55,7 @@ export const passiveTiers: Tier<Passive>[] = [
   },
   {
     level: 4,
-    skills: [deepFreeze, lightningBringer, arcaneShielding],
+    skills: [deepFreeze, lightningBringer, arcaneShielding, stormPiercer],
   },
   {
     level: 5,

@@ -24,7 +24,7 @@ export const elementalUtilization: Passive = {
   feats: [
     {
       id: "elemental-damage",
-      name: "elemental damage",
+      name: "Elemental damage",
       details: ["20% increased Elemental damage"],
     },
     {

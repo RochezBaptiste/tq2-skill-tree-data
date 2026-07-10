@@ -17,6 +17,18 @@ export const leap: Active = {
   tags: ["Warfare", "Active", "Movement", "Area", "Exhaust"],
   modifiers: [
     {
+      id: "engage",
+      label: "Engage",
+      maxRank: 1,
+      cost: 2,
+      perks: [
+        {
+          id: "less-damage",
+          label: "For 2.5s you take 40% less damage",
+        },
+      ],
+    },
+    {
       id: "escape",
       label: "Escape",
       maxRank: 2,
@@ -106,7 +118,7 @@ export const leap: Active = {
     {
       id: "stun",
       label: "Stun",
-      maxRank: 2,
+      maxRank: 3,
       cost: 1,
       perks: [
         {

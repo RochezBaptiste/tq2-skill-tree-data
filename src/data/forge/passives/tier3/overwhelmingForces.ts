@@ -30,7 +30,7 @@ export const overwhelmingForces: Passive = {
     },
     {
       id: "device-activation",
-      name: "Device activation",
+      name: "Device activations",
       details: [
         "When you consume Overwhelm, your activatable Devices recover 2 Activations",
       ],

@@ -32,7 +32,7 @@ export const lethalStrike: Active = {
     },
     {
       id: "enhanced-critical-hit",
-      label: "Enhanced Critical Hit",
+      label: "Enhanced Critical Hits",
       maxRank: 5,
       cost: 1,
       perks: [

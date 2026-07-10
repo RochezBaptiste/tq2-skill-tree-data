@@ -39,14 +39,14 @@ export const deathAngle: Passive = {
       details: ["+10% Physical penetration"],
     },
     {
-      id: "vitality-penetration",
-      name: "Vitality penetration",
-      details: ["+10% Vitality penetration"],
-    },
-    {
       id: "poison-enetration",
       name: "Poison penetration",
       details: ["+5% Penetration"],
+    },
+    {
+      id: "vitality-penetration",
+      name: "Vitality penetration",
+      details: ["+10% Vitality penetration"],
     },
   ],
 };

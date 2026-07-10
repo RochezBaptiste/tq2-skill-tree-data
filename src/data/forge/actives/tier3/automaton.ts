@@ -123,7 +123,7 @@ export const automaton: Active = {
     },
     {
       id: "enhanced-heal",
-      label: "Shield Attachment",
+      label: "Enhanced Heal",
       maxRank: 2,
       cost: 1,
       perks: [],

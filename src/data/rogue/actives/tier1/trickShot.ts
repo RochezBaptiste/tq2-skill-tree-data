@@ -193,7 +193,7 @@ export const trickShot: Active = {
       id: "shadow-clone-copy",
       label: "Shadow clone copy",
       maxRank: 1,
-      cost: 1,
+      cost: 3,
       perks: [],
     },
   ],

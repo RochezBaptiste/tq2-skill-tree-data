@@ -99,15 +99,15 @@ export const battlefieldAwareness: Active = {
     },
     {
       id: "vitality-drain",
-      label: "Vitality Drain",
+      label: "Vitality Damage",
       maxRank: 5,
       cost: 1,
       perks: [
         {
           id: "vitality-lifesteal",
           label: "+%1 Weapon Vitality Damage, %2% increased Lifesteal",
-          baseValue: [8, 10],
-          perLevel: [8, 10],
+          baseValue: [9, 10],
+          perLevel: [9, 10],
         },
         {
           id: "cost",

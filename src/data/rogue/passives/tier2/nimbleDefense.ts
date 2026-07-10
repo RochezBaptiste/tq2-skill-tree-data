@@ -23,7 +23,7 @@ export const nimbleDefense: Passive = {
   feats: [
     {
       id: "glancing-projectil",
-      name: "Glancing projectil",
+      name: "Glancing projectile",
       details: [
         "+15% Glancing projectile hit chance",
         "-5% glancing melee hit chance",
