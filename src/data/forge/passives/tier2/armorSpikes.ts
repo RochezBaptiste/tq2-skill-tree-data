@@ -28,7 +28,7 @@ export const armorSpikes: Passive = {
     },
     {
       id: "retaliation-range",
-      name: "Retaliaation range",
+      name: "Retaliation range",
       details: ["20% increased Retaliation range"],
     },
     {

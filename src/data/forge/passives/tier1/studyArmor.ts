@@ -4,8 +4,8 @@ export const studyArmor: Passive = {
   id: "study-armor",
   name: "Study armor",
   tier: 1,
-  max: 12,
-  unlockAt: [6, 12],
+  max: 10,
+  unlockAt: [6, 10],
   stats: [
     {
       id: "increase-health",
