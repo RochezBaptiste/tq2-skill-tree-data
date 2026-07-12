@@ -34,7 +34,7 @@ export const sleightOfHand: Passive = {
     {
       id: "critical-hit-chance",
       name: "Critical hit chance",
-      details: ["+3% spell critical hit chance with Weapon attacks"],
+      details: ["+3% critical hit chance with Weapon attacks"],
     },
   ],
 };

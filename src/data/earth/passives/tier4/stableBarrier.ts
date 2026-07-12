@@ -31,5 +31,10 @@ export const stableBarrier: Passive = {
       name: "Barrier decay",
       details: ["20% less barrier decay rate"],
     },
+    {
+      id: "energy-to-barrier",
+      name: "Energy to barrier",
+      details: ["Gain 103% of Energy spent as Barrier"],
+    },
   ],
 };
