@@ -41,7 +41,7 @@ export const earthquake: Active = {
         {
           id: "slow",
           label:
-            "While Channeling, ennemies are slowed by +25% within 6.0m of you",
+            "While Channeling, enemies are slowed by +25% within 6.0m of you",
         },
         {
           id: "cost-flat",

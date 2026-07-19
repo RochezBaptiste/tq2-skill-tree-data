@@ -9,7 +9,7 @@ export const forceField: Active = {
     "-",
     "Limit: 1",
     "-",
-    "Ennemies affected deal 10% less damage and have 20% less Movement speed",
+    "Enemies affected deal 10% less damage and have 20% less Movement speed",
   ],
   cost: {},
   cooldown: 8000,

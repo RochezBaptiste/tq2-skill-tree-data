@@ -26,7 +26,7 @@ export const deepFreeze: Passive = {
     },
     {
       id: "damage-immobilized",
-      label: "%1% increased damage against immobilized ennemies",
+      label: "%1% increased damage against immobilized enemies",
       baseValue: 5,
       perLevel: 5,
     },

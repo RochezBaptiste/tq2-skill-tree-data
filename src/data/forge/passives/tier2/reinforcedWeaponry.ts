@@ -35,7 +35,7 @@ export const reinforcedWeaponry: Passive = {
     {
       id: "damage-ailment",
       name: "Damage against Ailment",
-      details: ["20% increased damage against Bleeding or Staggered ennemies"],
+      details: ["20% increased damage against Bleeding or Staggered enemies"],
     },
     {
       id: "ailment-power",

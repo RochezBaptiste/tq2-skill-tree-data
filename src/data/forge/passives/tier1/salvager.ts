@@ -16,7 +16,7 @@ export const salvager: Passive = {
     },
     {
       id: "drop-chance",
-      label: "Ennemies have +%1% chance to drop double Divine cores",
+      label: "Enemies have +%1% chance to drop double Divine cores",
       baseValue: 2,
       perLevel: 4,
     },
@@ -25,7 +25,7 @@ export const salvager: Passive = {
     {
       id: "double-divine",
       name: "Double Divine cores",
-      details: ["Ennemies have +15% chance to drop double Divine cores"],
+      details: ["Enemies have +15% chance to drop double Divine cores"],
     },
     {
       id: "max-divine",

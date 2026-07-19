@@ -5,8 +5,8 @@ export const chains: Active = {
   tier: 2,
   name: "Chains",
   description: [
-    "Throw chains in target diration.Deals X Piercing Damage and pull ennemies towards you",
-    "Enemmies hit are Stunned for 0.4s",
+    "Throw chains in target direction.Deals X Pierce Damage and pulls enemies towards you",
+    "Enemies hit are Stunned for 0.4s",
     "8m radius, 45 degree angle.",
     "Chain also picks up Divine cores and gold in the area",
   ],

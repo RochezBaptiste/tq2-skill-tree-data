@@ -15,7 +15,7 @@ export const curioCollector: Passive = {
     },
     {
       id: "divine-drop",
-      label: "Ennemies have +%1% chance to drop double Divine cores",
+      label: "Enemies have +%1% chance to drop double Divine cores",
       baseValue: 2,
       perLevel: 2,
     },

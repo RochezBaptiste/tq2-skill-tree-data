@@ -114,7 +114,7 @@ export const fissure: Active = {
         },
         {
           id: "require",
-          label: "Requires Axe, Swork, Spear or Blunt Melee Weapon",
+          label: "Requires Axe, Sword, Spear or Blunt Melee Weapon",
         },
       ],
     },
@@ -156,7 +156,7 @@ export const fissure: Active = {
     },
     {
       id: "interrupt",
-      label: "Interrup",
+      label: "Interrupt",
       maxRank: 3,
       cost: 1,
       perks: [
