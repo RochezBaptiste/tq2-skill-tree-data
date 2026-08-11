@@ -17,7 +17,7 @@ export const frostbite: Active = {
   castTime: 480,
   critChance: 0,
   ailmentChance: 0,
-  tags: ["Storm", "Active", "Spell", "Exhaust", "Cold"],
+  tags: ["Storm", "Active", "Main", "Spell", "Exhaust", "Cold"],
   modifiers: [
     {
       id: "enhanced-damage",

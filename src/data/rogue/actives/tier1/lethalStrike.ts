@@ -8,6 +8,7 @@ export const lethalStrike: Active = {
     "Deals 296% Weapon Damage to a single target.",
     "Consumes Flow to deal 25% more Damage.",
     "If this skill consumes Flow or the target is killed, its cooldown is refreshed.",
+    "This skill can Execute",
   ],
   cost: {
     base: 30,
@@ -16,7 +17,7 @@ export const lethalStrike: Active = {
   castTime: 600,
   critChance: 0,
   ailmentChance: 5,
-  tags: ["Rogue", "Active", "Weapon attack", "Exhaust"],
+  tags: ["Rogue", "Active", "Main", "Weapon attack", "Exhaust"],
   modifiers: [
     {
       id: "enhanced-damage",

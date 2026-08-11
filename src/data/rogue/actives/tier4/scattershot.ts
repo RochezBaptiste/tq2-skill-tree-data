@@ -18,7 +18,7 @@ export const scattershot: Active = {
   castTime: 910,
   critChance: 0,
   ailmentChance: 5,
-  tags: ["Rogue", "Active", "Ranged attack", "Projectile", "Exhaust"],
+  tags: ["Rogue", "Active", "Main", "Ranged attack", "Projectile", "Exhaust"],
   modifiers: [
     {
       id: "enhanced-damage",

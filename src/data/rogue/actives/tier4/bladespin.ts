@@ -15,7 +15,7 @@ export const bladespin: Active = {
   castTime: 910,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Rogue", "Active", "Weapon attack", "Area", "Exhaust"],
+  tags: ["Rogue", "Active", "Main", "Weapon attack", "Area", "Exhaust"],
   modifiers: [
     {
       id: "vulnerable-on-hit",

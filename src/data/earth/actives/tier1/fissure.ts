@@ -16,7 +16,7 @@ export const fissure: Active = {
     "the fissure stays for 2s and slows enemies by 20%",
     "Consumes full Overwhelm for 50% more damage",
   ],
-  tags: ["Earth", "Active", "Spell", "Overwhelm", "Area", "Exhaust"],
+  tags: ["Earth", "Active", "Main", "Spell", "Overwhelm", "Area", "Exhaust"],
   modifiers: [
     {
       id: "vulnerable",

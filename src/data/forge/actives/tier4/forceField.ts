@@ -62,10 +62,15 @@ export const forceField: Active = {
     },
     {
       id: "enhanced-device-damage",
-      label: "Enhanced Device Damage",
+      label: "Enhanced Summon Damage",
       maxRank: 5,
       cost: 1,
-      perks: [],
+      perks: [
+        {
+          id: "description",
+          label: "Summons inside the area deal 20% increased damage",
+        },
+      ],
     },
   ],
 };

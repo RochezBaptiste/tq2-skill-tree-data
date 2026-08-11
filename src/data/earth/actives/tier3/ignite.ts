@@ -11,7 +11,7 @@ export const ignite: Active = {
   castTime: 500,
   critChance: 0,
   ailmentChance: 0,
-  tags: ["Earth", "Active", "Spell", "Fire", "Exhaust"],
+  tags: ["Earth", "Active", "Main", "Spell", "Fire", "Exhaust"],
   description: [
     "Target ennemy is Ignited for 4s",
     "Ignited enemies takes 131 Fire Damage every 0.5 seconds",

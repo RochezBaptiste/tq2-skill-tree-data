@@ -18,7 +18,7 @@ export const heavyAttack: Active = {
     "Ranged: 100% more projectile speed",
     "+1 Projectile penetration",
   ],
-  tags: ["Warfare", "Active", "Weapon attack", "Overwhelm", "Exhaust"],
+  tags: ["Warfare", "Active", "Main", "Weapon attack", "Overwhelm", "Exhaust"],
   modifiers: [
     {
       id: "bulwark-on-hit",

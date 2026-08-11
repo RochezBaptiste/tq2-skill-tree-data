@@ -6,3 +6,4 @@ export { masteryData as rogue } from "./data/rogue";
 export { masteryData as forge } from "./data/forge";
 export { masteryData as storm } from "./data/storm";
 export { masteryData as core } from "./data/core";
+export { masteryData as spirit } from "./data/spirit";

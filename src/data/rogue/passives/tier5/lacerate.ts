@@ -40,7 +40,7 @@ export const lacerate: Passive = {
     {
       id: "ailment-damage",
       name: "Ailment damage",
-      details: ["25% increased Ailemnt damage"],
+      details: ["25% increased Ailment damage"],
     },
   ],
 };

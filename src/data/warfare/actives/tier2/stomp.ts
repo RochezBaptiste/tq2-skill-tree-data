@@ -14,7 +14,7 @@ export const stomp: Active = {
   description: [
     "Stomp on the ground, dealing 856 Strike Damage in a 3m radius around you and stun enemies hit for 0.4s.",
   ],
-  tags: ["Warfare", "Active", "Area"],
+  tags: ["Warfare", "Active", "Main", "Area"],
   modifiers: [
     {
       id: "vulnerable-on-hit",
