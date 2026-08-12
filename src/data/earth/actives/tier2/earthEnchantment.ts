@@ -48,6 +48,19 @@ export const earthEnchantment: Active = {
       ],
     },
     {
+      id: "health-reservation",
+      label: "Health reservation",
+      maxRank: 1,
+      cost: 2,
+      perks: [
+        {
+          id: "description",
+          label:
+            "Instead of Energy reserves 3% Health per 10 Energy Reservation (12% total)",
+        },
+      ],
+    },
+    {
       id: "fire-imbuement",
       label: "Fire imbuement",
       maxRank: 2,

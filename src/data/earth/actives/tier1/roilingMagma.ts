@@ -11,7 +11,7 @@ export const roilingMagma: Active = {
   castTime: 1000,
   critChance: 5,
   ailmentChance: 100,
-  tags: ["Earth", "Active", "Spell", "Area", "Projectile", "Fire"],
+  tags: ["Earth", "Active", "Main", "Spell", "Area", "Projectile", "Fire"],
   description: [
     "Shoot a large ball of magma that explodes on contact with enemies or obstacles",
     "Deals 516 fire damage in 2.2 radius",

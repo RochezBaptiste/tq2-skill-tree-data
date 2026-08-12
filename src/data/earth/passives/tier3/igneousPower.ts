@@ -36,7 +36,7 @@ export const igneousPower: Passive = {
       id: "empower",
       name: "Empower",
       details: [
-        "For every 100 enery spent, you have a 30% cahnce to empower all of your summons for 4s",
+        "For every 100 energy spent, you have a 30% chance to empower all of your summons for 4s",
       ],
     },
     {

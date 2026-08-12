@@ -16,7 +16,7 @@ export const trickShot: Active = {
   castTime: 500,
   critChance: 0,
   ailmentChance: 10,
-  tags: ["Rogue", "Active", "Ranged attack", "Projectile", "Exhaust"],
+  tags: ["Rogue", "Active", "Main", "Ranged attack", "Projectile", "Exhaust"],
   modifiers: [
     {
       id: "enhanced-damage",

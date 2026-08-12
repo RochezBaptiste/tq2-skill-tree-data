@@ -35,8 +35,8 @@ export const toxinDistillation: Passive = {
       id: "shadow-spell",
       name: "Shadow spell",
       details: [
-        "Converts 100% damage of your Shadow spells to Poisong damage",
-        "10% increased Poisong damage",
+        "Converts 100% damage of your Shadow spells to Poison damage",
+        "10% increased Poison damage",
         "10% increased Plagued chance",
       ],
     },

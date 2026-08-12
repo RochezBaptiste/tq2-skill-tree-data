@@ -24,13 +24,13 @@ export const concussiveForce: Passive = {
     },
     {
       id: "stagger-chance",
-      label: "%1% increased stagger chance",
+      label: "%1% increased staggered chance",
       baseValue: 5,
       perLevel: 5,
     },
     {
       id: "stagger-power",
-      label: "%1% increased power chance",
+      label: "%1% increased staggered power",
       baseValue: 2,
       perLevel: 2,
     },
@@ -43,21 +43,19 @@ export const concussiveForce: Passive = {
   ],
   feats: [
     {
-      id: "ignite",
-      name: "Ignite",
-      details: [
-        "When you apply burn, 2% chance per burn stack on target to trigger Ignite",
-      ],
+      id: "stagger-amount",
+      name: "Stagger amount",
+      details: ["+3 Maximum Stagger"],
     },
     {
-      id: "chance",
-      name: "Chance",
-      details: ["50% increased burn chance", "20% reduced burn power"],
+      id: "stun-duration",
+      name: "Stun duration",
+      details: ["10% increased Stun duration"],
     },
     {
-      id: "power",
-      name: "Power",
-      details: ["50% increased burn power", "20% reduced burn chance"],
+      id: "damage-on-immobilized",
+      name: "Damage on immobilized",
+      details: ["30% increased damage against Immobilized enemies"],
     },
   ],
 };

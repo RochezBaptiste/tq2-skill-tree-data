@@ -16,7 +16,7 @@ export const barrage: Active = {
   castTime: 1170,
   critChance: 8,
   ailmentChance: 15,
-  tags: ["Warfare", "Active", "Weapon attack", "Exhaust"],
+  tags: ["Warfare", "Active", "Main", "Weapon attack", "Exhaust"],
   modifiers: [
     {
       id: "consume-flow",

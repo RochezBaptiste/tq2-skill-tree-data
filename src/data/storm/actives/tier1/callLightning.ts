@@ -14,7 +14,7 @@ export const callLightning: Active = {
   castTime: 670,
   critChance: 5,
   ailmentChance: 20,
-  tags: ["Storm", "Active", "Spell", "Area", "Lightning"],
+  tags: ["Storm", "Active", "Main", "Spell", "Area", "Lightning"],
   modifiers: [
     {
       id: "consume-flow",

@@ -17,7 +17,7 @@ export const rainOfArrows: Active = {
   castTime: 620,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Warfare", "Active", "Ranged attack", "Area", "Exhaust"],
+  tags: ["Warfare", "Active", "Main", "Ranged attack", "Area", "Exhaust"],
   modifiers: [
     {
       id: "consume-flow",

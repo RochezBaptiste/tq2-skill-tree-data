@@ -13,7 +13,7 @@ export const armorEruption: Active = {
   castTime: 700,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Forge", "Active", "Area", "Projectile"],
+  tags: ["Forge", "Active", "Main", "Area", "Projectile"],
   modifiers: [
     {
       id: "vulnerable-on-hit",

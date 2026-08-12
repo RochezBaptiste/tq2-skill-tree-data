@@ -15,7 +15,7 @@ export const sweepingStrike: Active = {
     "Sweep in a circle dealing 180% weapon damage in a 4m radius around you.",
     "Requires melee.",
   ],
-  tags: ["Warfare", "Active", "Weapon attack", "Area", "Exhaust"],
+  tags: ["Warfare", "Active", "Main", "Weapon attack", "Area", "Exhaust"],
   modifiers: [
     {
       id: "whirlwind",

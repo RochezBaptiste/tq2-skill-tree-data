@@ -15,7 +15,7 @@ export const iceNova: Active = {
   castTime: 370,
   critChance: 5,
   ailmentChance: 152,
-  tags: ["Storm", "Active", "Spell", "Area", "Cold"],
+  tags: ["Storm", "Active", "Main", "Spell", "Area", "Cold"],
   modifiers: [
     {
       id: "vulnerable-on-hit",

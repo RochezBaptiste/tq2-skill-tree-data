@@ -17,7 +17,15 @@ export const lightningBolt: Active = {
   castTime: 700,
   critChance: 5,
   ailmentChance: 15,
-  tags: ["Storm", "Active", "Spell", "Basic", "Projectile", "Lightning"],
+  tags: [
+    "Storm",
+    "Active",
+    "Spell",
+    "Basic",
+    "Main",
+    "Projectile",
+    "Lightning",
+  ],
   modifiers: [
     {
       id: "gain-flow",

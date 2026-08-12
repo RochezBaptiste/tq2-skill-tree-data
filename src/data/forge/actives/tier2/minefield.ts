@@ -19,7 +19,7 @@ export const mineField: Active = {
   castTime: 700,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Forge", "Active", "Spell", "Device"],
+  tags: ["Forge", "Active", "Main", "Spell", "Device"],
   modifiers: [
     {
       id: "enhanced-damage",

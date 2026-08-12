@@ -11,7 +11,7 @@ export const flammeVolley: Active = {
   castTime: 320,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Earth", "Sustained", "Aura", "Buff"],
+  tags: ["Earth", "Sustained", "Main", "Aura", "Buff"],
   description: [
     "Fire Projectiles from above your head to target location where they explode dealing 109 fire Damage in a 0.9 radius.",
     "For every 15 energy you spend globally, Flame Volley gains 1 stack of Amplify(Max20)",

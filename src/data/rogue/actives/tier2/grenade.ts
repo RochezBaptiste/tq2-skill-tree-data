@@ -15,7 +15,7 @@ export const grenade: Active = {
   castTime: 580,
   critChance: 5,
   ailmentChance: 0,
-  tags: ["Rogue", "Active", "Projectile", "Area", "Exhaust", "Fire"],
+  tags: ["Rogue", "Active", "Main", "Projectile", "Area", "Exhaust", "Fire"],
   modifiers: [
     {
       id: "vulnerable-on-hit",

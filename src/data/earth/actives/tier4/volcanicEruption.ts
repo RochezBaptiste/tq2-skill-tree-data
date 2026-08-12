@@ -11,7 +11,7 @@ export const volcaniceruption: Active = {
   castTime: 700,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Earth", "Active", "Spell", "Area", "Exhaust", "Fire"],
+  tags: ["Earth", "Active", "Main", "Spell", "Area", "Exhaust", "Fire"],
   description: [
     "The ground at target location breaks dealing X Strike Damage in a 3m radius and roots for 1s",
     "Stays active for 3s",

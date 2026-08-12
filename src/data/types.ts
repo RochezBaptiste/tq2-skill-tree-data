@@ -61,6 +61,9 @@ export type Active = {
     reserved?: number;
     reccuring?: number;
     divineCore?: number;
+    shades?: number;
+    health?: number;
+    healthRecurring?: number;
   };
   cooldown: number; //ms
   castTime: number; //ms

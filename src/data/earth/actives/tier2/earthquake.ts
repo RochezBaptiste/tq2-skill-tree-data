@@ -12,7 +12,7 @@ export const earthquake: Active = {
   castTime: 1000,
   critChance: 5,
   ailmentChance: 10,
-  tags: ["Earth", "Active", "Spell", "Area", "Channel"],
+  tags: ["Earth", "Active", "Main", "Spell", "Area", "Channel"],
   description: [
     "Conjure an Earthquake around you.",
     "Its effect increases in Stages for every 1.0s you channel",

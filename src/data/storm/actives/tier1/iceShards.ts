@@ -16,7 +16,7 @@ export const iceShards: Active = {
   castTime: 700,
   critChance: 5,
   ailmentChance: 15,
-  tags: ["Storm", "Active", "Spell", "Basic", "Projectile", "Cold"],
+  tags: ["Storm", "Active", "Spell", "Main", "Basic", "Projectile", "Cold"],
   modifiers: [
     {
       id: "torrent",

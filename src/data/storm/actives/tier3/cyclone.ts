@@ -17,7 +17,7 @@ export const cyclone: Active = {
   castTime: 670,
   critChance: 5,
   ailmentChance: 5,
-  tags: ["Storm", "Active", "Spell", "Area", "Cold"],
+  tags: ["Storm", "Active", "Main", "Spell", "Area", "Cold"],
   modifiers: [
     {
       id: "blizzard",
