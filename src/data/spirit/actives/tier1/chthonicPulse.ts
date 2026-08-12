@@ -222,7 +222,7 @@ export const chthonicPulse: Active = {
       id: "soulburn",
       label: "Soulburn",
       maxRank: 1,
-      cost: 1,
+      cost: 2,
       incompatibles: [
         {
           id: "soul-harvest",

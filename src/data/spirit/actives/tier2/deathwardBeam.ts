@@ -208,7 +208,7 @@ export const deathwardBeam: Active = {
       id: "healing-beam",
       label: "Healing Beam",
       maxRank: 3,
-      cost: 2,
+      cost: 1,
       perks: [
         {
           id: "description",

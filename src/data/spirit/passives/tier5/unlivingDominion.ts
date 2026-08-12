@@ -15,7 +15,7 @@ export const unlivingDominion: Passive = {
     },
     {
       id: "summon-critical-hit-chance",
-      label: "Your Summonds have +%1% critical hit chance",
+      label: "Your Summons have +%1% critical hit chance",
       baseValue: 0.5,
       perLevel: 0.5,
     },
