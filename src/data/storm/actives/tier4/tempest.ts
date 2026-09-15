@@ -113,7 +113,7 @@ export const tempest: Active = {
       perks: [
         {
           id: "maximum",
-          label: "+20% maximum Amplify",
+          label: "+20 maximum Amplify",
         },
       ],
     },

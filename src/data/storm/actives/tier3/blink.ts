@@ -62,7 +62,7 @@ export const blink: Active = {
         {
           id: "crash-damage",
           label:
-            "Insted briefly disappear into the sky and crash down on target location dealing 218 Strike Damage in a 2.5m radius",
+            "Instead briefly disappear into the sky and crash down on target location dealing 218 Strike Damage in a 2.5m radius",
         },
       ],
     },
