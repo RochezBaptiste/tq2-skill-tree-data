@@ -25,7 +25,7 @@ export const roilingMagma: Active = {
       perks: [
         {
           id: "damage",
-          label: "%1% more damage",
+          label: "%1% more Damage",
           baseValue: 10,
           perLevel: 10,
         },
@@ -40,15 +40,15 @@ export const roilingMagma: Active = {
         {
           id: "explosion",
           label:
-            "On explosion the skill sends 6 to 12 rock fragments in all direction",
+            "On explosion the skill sends %1 to %2 rock fragments in all directions dealing %3 Pierce Damage each.",
+          baseValue: [6, 9, 231],
+          perLevel: [2, 3, 38],
         },
         {
-          id: "damage",
-          label: "131 pierce damage each",
-        },
-        {
-          id: "energy",
-          label: "+2 energy",
+          id: "description-2",
+          label: "+%1 Energy Cost.",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -59,20 +59,26 @@ export const roilingMagma: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "15% more damage",
+          id: "description",
+          label: "%1% more Damage",
+          baseValue: 15,
+          perLevel: 15,
         },
         {
-          id: "refund",
+          id: "description-2",
           label: "Refund 30% of Energy spent over 1s",
+          baseValue: 30,
+          perLevel: 10,
         },
         {
-          id: "overload",
-          label: "Gain 1 Overload per 30 Energy spent",
+          id: "description-3",
+          label: "Gain 1 Overload per 30 Energy spent.",
         },
         {
-          id: "energy",
-          label: "+10 Energy cost",
+          id: "description-4",
+          label: "+%1 Energy cost",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -84,9 +90,11 @@ export const roilingMagma: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
-            "Consume full overwhelm for %1 more Damage, 20% more ailment chance %1% more aread radius and 50% more projectile speed",
+            "Consume full Overwhelm for %1% more Damage, %1% more Ailment Chance, %1% more Area Radius and 50% more Projectile Speed.",
+          baseValue: 20,
+          perLevel: 10,
         },
       ],
     },
@@ -97,13 +105,15 @@ export const roilingMagma: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
             "Explosion deals 65% of energy spent on this skill as additional fire damage",
         },
         {
-          id: "energy-cost",
-          label: "10% of current energy as energy cost Explosion",
+          id: "description-2",
+          label: "+%1% of Current Energy as Energy Cost",
+          baseValue: 10,
+          perLevel: 5,
         },
       ],
     },
@@ -114,27 +124,29 @@ export const roilingMagma: Active = {
       cost: 2,
       perks: [
         {
-          id: "desc",
+          id: "description",
           label: "Does not explode on contact with enemies",
         },
         {
-          id: "damage",
-          label: "Deals 87 fire damage every 0.5s in 2.5m radius",
+          id: "description-2",
+          label: "Deals %1 Fire Damage every 0.5s in a %2m radius.",
+          baseValue: [154, 2],
+          perLevel: [38, 0.5],
         },
         {
-          id: "explode",
-          label: "On use old orb explodes",
+          id: "description-3",
+          label: "Limit 1, On use old orb explodes.",
         },
         {
-          id: "less-damage",
+          id: "description-4",
           label: "50% less Explosion damage",
         },
         {
-          id: "less-projectil-speed",
+          id: "description-5",
           label: "95% less Projectile speed",
         },
         {
-          id: "less-projectil-range",
+          id: "description-6",
           label: "50% less Projectile Range",
         },
       ],

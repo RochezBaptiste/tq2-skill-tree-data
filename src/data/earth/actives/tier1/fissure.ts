@@ -13,7 +13,7 @@ export const fissure: Active = {
   ailmentChance: 10,
   description: [
     "Split the ground in front of you to deal 516 Strike Damage in a 8m line.",
-    "the fissure stays for 2s and slows enemies by 20%",
+    "The fissure stays for 2s and slows enemies by 20%",
     "Consumes full Overwhelm for 50% more damage",
   ],
   tags: ["Earth", "Active", "Main", "Spell", "Overwhelm", "Area", "Exhaust"],
@@ -25,7 +25,7 @@ export const fissure: Active = {
       cost: 2,
       perks: [
         {
-          id: "hit",
+          id: "description",
           label: "Applies Vulnerable on hit for 4s",
         },
       ],
@@ -37,7 +37,7 @@ export const fissure: Active = {
       cost: 2,
       perks: [
         {
-          id: "chance",
+          id: "description",
           label: "On hit, 50% chance to gain 3 Bulwark",
         },
       ],
@@ -49,8 +49,8 @@ export const fissure: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "%1% more damage",
+          id: "description",
+          label: "%1% more Damage",
           baseValue: 10,
           perLevel: 10,
         },
@@ -63,23 +63,24 @@ export const fissure: Active = {
       cost: 1,
       perks: [
         {
-          id: "duration",
+          id: "description",
           label: "+%1s Fissure duration",
           baseValue: 1,
           perLevel: 0.5,
         },
         {
-          id: "damage",
+          id: "description-2",
           label:
-            "The fissure is filled with lave and deals 22 Fire damage every 0.5s",
+            "The fissure is filled with lava and deals %1 Fire Damage every 0.5s with %2% Ailment Chance.",
+          baseValue: [38, 20],
+          perLevel: [20, 10],
         },
+
         {
-          id: "ailment",
-          label: "The lava have 20% ailment chance",
-        },
-        {
-          id: "cost",
-          label: "+30 energy cost",
+          id: "description-3",
+          label: "+%1 energy cost",
+          baseValue: 30,
+          perLevel: 10,
         },
       ],
     },
@@ -92,11 +93,15 @@ export const fissure: Active = {
         {
           id: "damage",
           label:
-            "Hitting a stunned enemy triggers a shockwave dealing 218 Strike Damage in a 1.8m radius",
+            "Hitting a stunned enemy triggers a shockwave dealing %1 Strike Damage in a %2m radius.",
+          baseValue: [384, 1.8],
+          perLevel: [77, 0.4],
         },
         {
           id: "cost",
-          label: "+2 Energy cost",
+          label: "%1 Energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -108,12 +113,12 @@ export const fissure: Active = {
       tags: ["Weapon Attack"],
       perks: [
         {
-          id: "transform",
+          id: "description",
           label:
-            "Turns the skill into a melee slam attack dealing 237% weapon damage with 100% weapon speed and 6m range instead.",
+            "Turns the skill into a melee slam attack dealing 240% Weapon Damage with 100% Weapon Speed and 6m",
         },
         {
-          id: "require",
+          id: "description-2",
           label: "Requires Axe, Sword, Spear or Blunt Melee Weapon",
         },
       ],
@@ -130,11 +135,15 @@ export const fissure: Active = {
         },
         {
           id: "ailement-chance",
-          label: "+40% added Base Ailment Chance",
+          label: "+%1% added Base Ailment Chance",
+          baseValue: 40,
+          perLevel: 40,
         },
         {
           id: "cost",
-          label: "+2 Energy cost",
+          label: "+%1 Energy cost",
+          baseValue: 2,
+          perLevel: 2,
         },
       ],
     },
@@ -145,12 +154,16 @@ export const fissure: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "5% more damage",
+          id: "description",
+          label: "%1% more damage",
+          baseValue: 5,
+          perLevel: 5,
         },
         {
-          id: "stun-chance",
-          label: "20% chance to Stun for 1.5s",
+          id: "description-2",
+          label: "%1% chance to Stun for 1.5s",
+          baseValue: 20,
+          perLevel: 10,
         },
       ],
     },
@@ -163,7 +176,9 @@ export const fissure: Active = {
         {
           id: "damage",
           label:
-            "Deals 50% more damage against channeling enemies, stuns them for 1s and refunds 20% Energy spent.",
+            "Deals %1% more damage against channeling enemies, stuns them for 1s and refunds %2% Energy spent.",
+          baseValue: [50, 20],
+          perLevel: [50, 20],
         },
       ],
     },
@@ -174,8 +189,10 @@ export const fissure: Active = {
       cost: 2,
       perks: [
         {
-          id: "number",
-          label: "Create +1 fissures in cone",
+          id: "description",
+          label: "Create +%1 fissures in cone",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -187,8 +204,8 @@ export const fissure: Active = {
       requires: [{ id: "fissure-add", label: "Additional Fissures" }],
       perks: [
         {
-          id: "number",
-          label: "Consuming full Overwhelm also adds +2 fissure in a cone.",
+          id: "description",
+          label: "Consuming full Overwhelm also adds +2 fissures in a cone.",
         },
       ],
     },
@@ -199,11 +216,11 @@ export const fissure: Active = {
       cost: 2,
       perks: [
         {
-          id: "summons",
+          id: "description",
           label: "Instead command your Core Dweller to use Fissure",
         },
         {
-          id: "damage",
+          id: "descripion-2",
           label: "10% more damage",
         },
       ],

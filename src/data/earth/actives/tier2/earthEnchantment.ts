@@ -25,13 +25,17 @@ export const earthEnchantment: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
-            "Aura grants you and allies +15% Fire resistance and +1% Max Fire resistance",
+            "Aura grants you and allies +%1% Fire Resistance and +%1% Max Fire Resistance.",
+          baseValue: [15, 1],
+          perLevel: [15, 1],
         },
         {
-          id: "energy",
-          label: "+10 Energy reserved",
+          id: "description-2",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -42,8 +46,10 @@ export const earthEnchantment: Active = {
       cost: 1,
       perks: [
         {
-          id: "reserve",
-          label: "-20 energy reserved",
+          id: "description",
+          label: "-%1 energy reserved",
+          baseValue: 20,
+          perLevel: 20,
         },
       ],
     },
@@ -67,16 +73,22 @@ export const earthEnchantment: Active = {
       cost: 2,
       perks: [
         {
-          id: "damage",
-          label: "Aura grants you and allies +11 Fire Weapon Damage",
+          id: "description",
+          label: "Aura grants you and allies +%1 Fire Weapon Damage",
+          baseValue: 9,
+          perLevel: 10,
         },
         {
-          id: "converted",
-          label: "Grants you 30% Weapon Damage converted to Fire Damage",
+          id: "description-2",
+          label: "Grants you %1% Weapon Damage converted to Fire Damage",
+          baseValue: 30,
+          perLevel: 30,
         },
         {
-          id: "cost",
-          label: "+30 Energy reserved",
+          id: "description-3",
+          label: "+%1 Energy reserved",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -87,16 +99,22 @@ export const earthEnchantment: Active = {
       cost: 2,
       perks: [
         {
-          id: "damage",
-          label: "Aura grants you and allies +11 Strike Weapon Damage",
+          id: "description",
+          label: "Aura grants you and allies +18 Strike Weapon Damage",
+          baseValue: 18,
+          perLevel: 9,
         },
         {
-          id: "converted",
-          label: "Grants you 30% Weapon Damage converted to Strike Damage",
+          id: "description-2",
+          label: "Grants you %1% Weapon Damage converted to Strike Damage",
+          baseValue: 30,
+          perLevel: 30,
         },
         {
-          id: "cost",
+          id: "description-3",
           label: "+30 Energy reserved",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -108,11 +126,15 @@ export const earthEnchantment: Active = {
       perks: [
         {
           id: "armor",
-          label: "Aura grants you and allies +366 Armor and 5% increased Armor",
+          label: "Aura grants you and allies +%1 Armor and %2% increased Armor",
+          baseValue: [581, 5],
+          perLevel: [97, 5],
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -123,12 +145,17 @@ export const earthEnchantment: Active = {
       cost: 1,
       perks: [
         {
-          id: "ailment",
-          label: "Aura grants you and allies +33 Armor and 50% increased Armor",
+          id: "description",
+          label:
+            "When you are hit by an enemy within 3m deals 77 Fire Damage with 50% Ailment Chance.",
+          baseValue: [77, 50],
+          perLevel: [0, 50],
         },
         {
-          id: "cost",
-          label: "+15 Energy reserved",
+          id: "description-2",
+          label: "+%1 Energy reserved",
+          baseValue: 15,
+          perLevel: 10,
         },
       ],
     },
@@ -141,11 +168,15 @@ export const earthEnchantment: Active = {
         {
           id: "physical",
           label:
-            "Aura grants an additional 8% increased Fire and Physical Damage",
+            "Aura grants an additional %1% increased Fire and Physical Damage",
+          baseValue: 8,
+          perLevel: 8,
         },
         {
           id: "cost",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },

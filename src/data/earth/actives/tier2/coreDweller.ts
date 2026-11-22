@@ -28,7 +28,7 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "base",
+          id: "description",
           label:
             "When this Summon is reduced to below 20% Health, it explodes dealing 32% of its Health as Fire Damage in a 6m radius",
         },
@@ -41,11 +41,11 @@ export const coredweller: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "descritpion",
           label: "This Summon has 20% more Damage",
         },
         {
-          id: "reserve",
+          id: "description-2",
           label: "+30 Energy reserved",
         },
       ],
@@ -57,12 +57,16 @@ export const coredweller: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "This Summon has 10% more Damage",
+          id: "description",
+          label: "This Summon has %1% more Damage",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
-          id: "energy",
-          label: "+5 Energy reserved",
+          id: "description-2",
+          label: "+%1 Energy reserved",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -74,11 +78,15 @@ export const coredweller: Active = {
       perks: [
         {
           id: "speed",
-          label: "This Summon has 10% more All speed",
+          label: "This Summon has %1% more All speed",
+          baseValue: 10,
+          perLevel: 10,
         },
         {
           id: "damage",
-          label: "+10 Energy reserved",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -89,16 +97,22 @@ export const coredweller: Active = {
       cost: 1,
       perks: [
         {
-          id: "maximum",
-          label: "This Summon has 50% more Maximum health",
+          id: "description",
+          label: "This Summon has %1% more Maximum health",
+          baseValue: 50,
+          perLevel: 50,
         },
         {
-          id: "regeneration",
-          label: "This Summon regenerates 0.5% health per second",
+          id: "description-2",
+          label: "This Summon regenerates %1% health per second",
+          baseValue: 0.5,
+          perLevel: 0.5,
         },
         {
-          id: "energy",
-          label: "+%10Energy reserved",
+          id: "description-3",
+          label: "+%1 Energy reserved",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -109,9 +123,20 @@ export const coredweller: Active = {
       cost: 1,
       perks: [
         {
-          id: "empower",
-          label:
-            "While this Summon is empowered it has 15% more damage, 5% increased Skill Speed",
+          id: "description",
+          label: "While this Summon is Empowered it has:",
+        },
+        {
+          id: "description-2",
+          label: "%1% more Damage",
+          baseValue: 15,
+          perLevel: 15,
+        },
+        {
+          id: "description-3",
+          label: "%1% increased Skill Speed",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -122,9 +147,20 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "channeled",
-          label:
-            "While Channeled this Summon has 30% more damage, 10% increased Skill Speed",
+          id: "description",
+          label: "While Channeled this Summon has:",
+        },
+        {
+          id: "description-2",
+          label: "%1% more Damage",
+          baseValue: 30,
+          perLevel: 20,
+        },
+        {
+          id: "description-3",
+          label: "%1% increased Skill Speed",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -135,9 +171,20 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "channel",
-          label:
-            "active Effect: Heal this Summon for +10% Health per second. While Channeled thissummon takes 30% less Damage",
+          id: "description",
+          label: "Active Effect:",
+        },
+        {
+          id: "description-2",
+          label: "Heal this Summon for +%1% Health per second",
+          baseValue: 10,
+          perLevel: 10,
+        },
+        {
+          id: "description-3",
+          label: "While Channeled this Summon takes %1% less Damage",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -148,11 +195,11 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "time",
+          id: "description",
           label: "35% less Restoration Time",
         },
         {
-          id: "summon",
+          id: "description-2",
           label: "This Summon has 10% less maximum health",
         },
       ],
@@ -164,15 +211,15 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label: "This summon has 20% more Damage",
         },
         {
-          id: "speed",
+          id: "description-2",
           label: "This Summon has 15% increased All Speed",
         },
         {
-          id: "health",
+          id: "description-3",
           label: "This Summon has 40% less maximum health",
         },
       ],
@@ -184,7 +231,7 @@ export const coredweller: Active = {
       cost: 2,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
             "On every third attack the Core Dweller now slams the ground dealing 200% of its Weapon Damage",
         },

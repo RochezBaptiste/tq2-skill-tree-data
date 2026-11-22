@@ -16,7 +16,7 @@ export const earthquake: Active = {
   description: [
     "Conjure an Earthquake around you.",
     "Its effect increases in Stages for every 1.0s you channel",
-    "Releasing after reaching Stage 1 deals X Strike Damage in a 4.0m radius",
+    "Releasing after reaching Stage 1 deals 1,246 Strike Damage in a 4.0m radius",
     "Deals 120% more Damage per additional Stage. Stage 2 stuns for 0.6s",
   ],
   modifiers: [
@@ -27,8 +27,10 @@ export const earthquake: Active = {
       cost: 1,
       perks: [
         {
-          id: "channel",
-          label: "While Channeling gain 66 Barrier every 0.5s",
+          id: "description",
+          label: "While Channeling gain %1 Barrier every 0.5s",
+          baseValue: 87,
+          perLevel: 35,
         },
       ],
     },
@@ -39,17 +41,23 @@ export const earthquake: Active = {
       cost: 1,
       perks: [
         {
-          id: "slow",
+          id: "description",
           label:
-            "While Channeling, enemies are slowed by +25% within 6.0m of you",
+            "While Channeling, enemies are slowed by +%1% within 6.0m of you",
+          baseValue: 25,
+          perLevel: 15,
         },
         {
-          id: "cost-flat",
-          label: "+2 Energy Cost",
+          id: "description-2",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "cost-second",
-          label: "+1 Energy Cost per second",
+          id: "description-3",
+          label: "+%1 Energy Cost per second",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -60,11 +68,11 @@ export const earthquake: Active = {
       cost: 2,
       perks: [
         {
-          id: "stage",
+          id: "description",
           label: "+1 Maximum Stage",
         },
         {
-          id: "overwhelm",
+          id: "description-2",
           label: "When you gain a Stage gain Overwhelm",
         },
       ],
@@ -77,16 +85,22 @@ export const earthquake: Active = {
       requires: [{ id: "extended", label: "Extended Charge" }],
       perks: [
         {
-          id: "damage",
-          label: "7% more damage per Overwhelm",
+          id: "description",
+          label: "%1% more damage per Overwhelm",
+          baseValue: 7,
+          perLevel: 7,
         },
         {
-          id: "cost-flat",
-          label: "+2 Energy Cost",
+          id: "description-2",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "cost-second",
-          label: "+1 Energy Cost per second",
+          id: "description-3",
+          label: "+%1 Energy Cost per second",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -97,17 +111,23 @@ export const earthquake: Active = {
       cost: 1,
       perks: [
         {
-          id: "strike",
+          id: "description",
           label:
             "Creates an aftershock 1s after release. Deals 87 Strike Damage in a 6.0m radius once per Stage reached",
+          baseValue: 154,
+          perLevel: 77,
         },
         {
-          id: "cost-flat",
-          label: "+2 Energy Cost",
+          id: "description-2",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "cost-second",
-          label: "+1 Energy Cost per second",
+          id: "description-3",
+          label: "+%1 Energy Cost per second",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -118,16 +138,22 @@ export const earthquake: Active = {
       cost: 1,
       perks: [
         {
-          id: "speed",
-          label: "8% more Action Speed",
+          id: "description",
+          label: "%1% more Action Speed",
+          baseValue: 8,
+          perLevel: 8,
         },
         {
-          id: "cost-flat",
-          label: "+2 Energy Cost",
+          id: "description-2",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "cost-second",
-          label: "+1 Energy Cost per second",
+          id: "description-3",
+          label: "+%1 Energy Cost per second",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -138,17 +164,23 @@ export const earthquake: Active = {
       cost: 1,
       perks: [
         {
-          id: "reduce",
+          id: "description",
           label:
-            "After reaching Stage 1, while charging you gain Unstoppable and take 215% reduced Damage",
+            "After reaching Stage 1, while charging you gain Unstoppable and take %1% reduced Damage",
+          baseValue: 15,
+          perLevel: 5,
         },
         {
           id: "cost-flat",
-          label: "+2 Energy Cost",
+          label: "+%1 Energy Cost",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
           id: "cost-second",
-          label: "+1 Energy Cost per second",
+          label: "+%1 Energy Cost per second",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
