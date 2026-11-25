@@ -1,7 +1,12 @@
 import { defineConfig } from "tsup";
 
+const masteries = ["core", "earth", "forge", "rogue", "spirit", "storm", "warfare"];
+
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: {
+    index: "src/index.ts",
+    ...Object.fromEntries(masteries.map((id) => [id, `src/data/${id}/index.ts`])),
+  },
   format: ["esm", "cjs"],
   dts: true,
   clean: true,

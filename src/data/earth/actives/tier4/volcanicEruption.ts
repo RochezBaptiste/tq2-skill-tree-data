@@ -13,9 +13,9 @@ export const volcaniceruption: Active = {
   ailmentChance: 5,
   tags: ["Earth", "Active", "Main", "Spell", "Area", "Exhaust", "Fire"],
   description: [
-    "The ground at target location breaks dealing X Strike Damage in a 3m radius and roots for 1s",
+    "The ground at target location breaks dealing 308 - 461 Strike Damage in a 3m radius and roots for 1s",
     "Stays active for 3s",
-    "After activity ends, create and Eruption dealing X Fire Damage in a 3m radius",
+    "After activity ends, create and Eruption dealing 461 - 923  Fire Damage in a 3m radius",
     "Can be reactivated to end activity early",
   ],
   modifiers: [
@@ -26,7 +26,7 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label: "%1% more damage",
           baseValue: 10,
           perLevel: 10,
@@ -40,12 +40,16 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "duration",
-          label: "+1s Duration",
+          id: "description",
+          label: "+%1s Duration",
+          baseValue: 1,
+          perLevel: 1,
         },
         {
-          id: "enery",
-          label: "+10 Energy Cost",
+          id: "description-2",
+          label: "+%1 Energy Cost",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -56,13 +60,20 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label:
-            "turns the broken ground into a Lava Field. While active deals 65 Fire Damage every 0.5 in a 3m radius",
+          id: "description",
+          label: "Turns the broken ground into a Lava Field.",
         },
         {
-          id: "energy-cost",
-          label: "+20 Energy Cost",
+          id: "description-2",
+          label: "While active deals %1 Fire Damage every 0.5s in a %2m radius",
+          baseValue: [115, 3],
+          perLevel: [20, 0.5],
+        },
+        {
+          id: "description-3",
+          label: "+%1 Energy Cost",
+          baseValue: 20,
+          perLevel: 5,
         },
       ],
     },
@@ -73,9 +84,11 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
-            "While active, for every 80 Energy you spend globally, cause another Eruption dealing 174 Fire Damage in a 3m radius",
+            "While active, for every 80 Energy you spend globally, cause another Eruption dealing %1 Fire Damage in a 3m radius",
+          baseValue: 308,
+          perLevel: 76,
         },
       ],
     },
@@ -86,8 +99,10 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "strike-damage",
-          label: "Every Eruption deals 131 Strike Damagein a 4m radius",
+          id: "description",
+          label: "Every Eruption deals %1 Strike Damage in a %2m radius",
+          baseValue: [231, 4],
+          perLevel: [38, 0.5],
         },
       ],
     },
@@ -98,8 +113,10 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "Main Eruption deals 10% more Damage per second of activity",
+          id: "description",
+          label: "Main Eruption deals %1% more Damage per second of activity",
+          baseValue: 10,
+          perLevel: 5,
         },
       ],
     },
@@ -110,8 +127,10 @@ export const volcaniceruption: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "1% more Damage per Overload up to 25%",
+          id: "description",
+          label: "%1% more Damage per Overload up to %2%",
+          baseValue: [1, 25],
+          perLevel: [1, 25],
         },
       ],
     },

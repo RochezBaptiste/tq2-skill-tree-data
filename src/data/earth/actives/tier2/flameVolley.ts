@@ -25,8 +25,10 @@ export const flammeVolley: Active = {
       cost: 1,
       perks: [
         {
-          id: "max",
-          label: "+6 maximum Aplify",
+          id: "description",
+          label: "+%1 maximum Amplify",
+          baseValue: 6,
+          perLevel: 6,
         },
       ],
     },
@@ -37,8 +39,10 @@ export const flammeVolley: Active = {
       cost: 1,
       perks: [
         {
-          id: "chance",
-          label: "+8% added Base Ailment chance ",
+          id: "description",
+          label: "+1% added Base Ailment chance",
+          baseValue: 8,
+          perLevel: 8,
         },
       ],
     },
@@ -49,17 +53,19 @@ export const flammeVolley: Active = {
       cost: 2,
       perks: [
         {
-          id: "auto",
+          id: "description",
           label:
             "Automatically fires at enemies in a 8m radius once every second while it has Amplify.",
         },
         {
-          id: "cast-speed",
-          label: "Frequency is affected by Cast Speed",
+          id: "description-2",
+          label: "Frequency is affected by Cast Speed.",
         },
         {
-          id: "lose",
-          label: "While equipped, loses 1 Amplify every 1s",
+          id: "description-3",
+          label: "While equipped, loses 1 Amplify every %1s",
+          baseValue: 1,
+          perLevel: 2,
         },
       ],
     },
@@ -70,11 +76,13 @@ export const flammeVolley: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "Deals 2% more Damage per Amplify",
+          id: "description",
+          label: "Deals %1% more Damage per Amplify",
+          baseValue: 2,
+          perLevel: 1,
         },
         {
-          id: "cost",
+          id: "description-2",
           label: "Cost +1 Amplify whenever it fires",
         },
       ],
@@ -86,19 +94,19 @@ export const flammeVolley: Active = {
       cost: 2,
       perks: [
         {
-          id: "spawn",
+          id: "description",
           label: "Spawn 200% more projectiles",
         },
         {
-          id: "additional",
+          id: "description-2",
           label: "Additional projectiles don't cost Amplify",
         },
         {
-          id: "target",
+          id: "description-3",
           label: "Target location are random",
         },
         {
-          id: "channeling",
+          id: "description-4",
           label:
             "You can move while channeling with 20% reduced Movement Speed",
         },
@@ -112,7 +120,9 @@ export const flammeVolley: Active = {
       perks: [
         {
           id: "chance",
-          label: "25% chance to not lose Amplify on use",
+          label: "%1% chance to not lose Amplify on use",
+          baseValue: 25,
+          perLevel: 15,
         },
       ],
     },
@@ -123,7 +133,7 @@ export const flammeVolley: Active = {
       cost: 1,
       perks: [
         {
-          id: "physical",
+          id: "description",
           label:
             "When directly used generates Overwhelm on hit, not more than once every 0.3s",
         },
@@ -136,12 +146,16 @@ export const flammeVolley: Active = {
       cost: 1,
       perks: [
         {
-          id: "speed",
-          label: "20% more Projectile Speed",
+          id: "description",
+          label: "%1% more Projectile Speed",
+          baseValue: 20,
+          perLevel: 20,
         },
         {
-          id: "ailment-chance",
-          label: "2% more Damage and Ailment Chance",
+          id: "description-2",
+          label: "%1% more Damage and Ailment Chance",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },

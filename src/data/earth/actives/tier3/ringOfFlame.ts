@@ -32,16 +32,16 @@ export const ringOfFlame: Active = {
       ],
       perks: [
         {
-          id: "base",
+          id: "description",
           label:
             "Turn the skill into a sustained skill, so it is always active",
         },
         {
-          id: "cooldown",
+          id: "description-2",
           label: "No cooldown. No bonuses on use",
         },
         {
-          id: "reserved",
+          id: "description-3",
           label: "Reserves +60 Energy",
         },
       ],
@@ -53,13 +53,17 @@ export const ringOfFlame: Active = {
       cost: 1,
       perks: [
         {
-          id: "cold-resistance",
+          id: "description",
           label:
-            "Enemies inside the Aura get -2% to Cold resistance, Fire resistance and Armor value every second.",
+            "Enemies inside the Aura get -%1% to Cold Resistance, Fire Resistance and Armor Value every second.",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "max-stack",
-          label: "Maximum is -6%",
+          id: "description-2",
+          label: "Maximum is -%1%",
+          baseValue: 6,
+          perLevel: 6,
         },
       ],
     },
@@ -70,12 +74,16 @@ export const ringOfFlame: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
-          label: "Deals up to 60% more Damage to enemies close to the center",
+          id: "description",
+          label: "Deals up to %1% more Damage to enemies closer to the center.",
+          baseValue: 60,
+          perLevel: 30,
         },
         {
-          id: "permanency",
-          label: "Permanency: +5 Energy reserved",
+          id: "description-2",
+          label: "Permanency: +%1 Energy reserved",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -87,13 +95,17 @@ export const ringOfFlame: Active = {
       cost: 2,
       perks: [
         {
-          id: "damage-converted",
+          id: "description",
           label:
-            "While Active grants 100% Weapon Damage converted to Fire and 1.5% increased Fire Weapon Damage per Amplify",
+            "While Active grants 100% Weapon Damage converted to Fire and %1% increased Fire Weapon Damage per Amplify.",
+          baseValue: 1.5,
+          perLevel: 1,
         },
         {
-          id: "amplify",
-          label: "On use gains +3 Amplify",
+          id: "description-2",
+          label: "On use gains +%1 Amplify",
+          baseValue: 3,
+          perLevel: 3,
         },
       ],
     },
@@ -104,12 +116,16 @@ export const ringOfFlame: Active = {
       cost: 1,
       perks: [
         {
-          id: "max-amplify",
-          label: "+4 Maximum Amplify",
+          id: "description",
+          label: "+%1 Maximum Amplify",
+          baseValue: 4,
+          perLevel: 4,
         },
         {
-          id: "permanency",
-          label: "Permanency: +5 Energy reserved",
+          id: "description-2",
+          label: "Permanency: +%1 Energy reserved",
+          baseValue: 5,
+          perLevel: 5,
         },
       ],
     },
@@ -121,12 +137,16 @@ export const ringOfFlame: Active = {
       incompatibles: [{ id: "permanency", label: "Permanency" }],
       perks: [
         {
-          id: "max-amplify",
-          label: "On use gains +2 Amplify",
+          id: "description",
+          label: "On use gains +%1 Amplify",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "damage",
-          label: "Buff grants 10% increased Damage",
+          id: "description-2",
+          label: "Buff grants %1% increased Damage",
+          baseValue: 10,
+          perLevel: 10,
         },
       ],
     },
@@ -137,12 +157,16 @@ export const ringOfFlame: Active = {
       cost: 1,
       perks: [
         {
-          id: "radius",
-          label: "2% increased radius per Overload",
+          id: "description",
+          label: "%1% increased radius per Overload",
+          baseValue: 2,
+          perLevel: 2,
         },
         {
-          id: "damage",
-          label: "1% increased damage per Overload.",
+          id: "description-2",
+          label: "%1% increased damage per Overload.",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },

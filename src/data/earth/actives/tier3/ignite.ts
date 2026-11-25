@@ -24,16 +24,17 @@ export const ignite: Active = {
       cost: 1,
       perks: [
         {
-          id: "base",
-          label: "When directly used this skill deals",
+          id: "desription",
+          label:
+            "When directly used this skill deals %1 Fire Damage to the target with %2% Ailment Chance.",
+          baseValue: [169, 100],
+          perLevel: [16, 50],
         },
         {
-          id: "damage-flat",
-          label: "96 Fire Damage to the target with 100 Ailment chance",
-        },
-        {
-          id: "damage-time",
-          label: "25% less Damage over time",
+          id: "desription-2",
+          label: "%1% less Damage over Time.",
+          baseValue: 15,
+          perLevel: 10,
         },
       ],
     },
@@ -44,8 +45,10 @@ export const ignite: Active = {
       cost: 1,
       perks: [
         {
-          id: "fire-resistance",
-          label: "Ignited enemies have -4% Fire Resistance",
+          id: "description",
+          label: "Ignited enemies have -%1% Fire Resistance",
+          baseValue: 4,
+          perLevel: 4,
         },
       ],
     },
@@ -56,9 +59,11 @@ export const ignite: Active = {
       cost: 1,
       perks: [
         {
-          id: "trigger",
+          id: "description",
           label:
-            "When Ignite ends it triggers an explosion dealing 174 Fire Damage in a 2.0m radius",
+            "When Ignite ends it triggers an explosion dealing %1 Fire Damage in a %2m radius",
+          baseValue: [308, 2],
+          perLevel: [76, 0.6],
         },
       ],
     },
@@ -69,11 +74,11 @@ export const ignite: Active = {
       cost: 2,
       perks: [
         {
-          id: "jump",
+          id: "description",
           label: "When Ignite ends, it jumps to another enemy within 3m",
         },
         {
-          id: "less-damage",
+          id: "description-2",
           label: "40% less Damage",
         },
       ],
@@ -85,7 +90,7 @@ export const ignite: Active = {
       cost: 2,
       perks: [
         {
-          id: "apply",
+          id: "description",
           label: "Flame Volley has 15% chance to apply Ignite on hit",
         },
       ],
