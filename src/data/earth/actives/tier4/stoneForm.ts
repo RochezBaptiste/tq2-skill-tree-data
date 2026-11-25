@@ -25,9 +25,20 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "regeneration",
-          label:
-            "On use for 1s grants: +79 Health regeneration, 100% increased Health regeneration",
+          id: "description",
+          label: "On use, for 1s grants:",
+        },
+        {
+          id: "description-2",
+          label: "+%1 Health Regeneration",
+          baseValue: 98,
+          perLevel: 82,
+        },
+        {
+          id: "description-3",
+          label: "%1% increased Health Regeneration",
+          baseValue: 100,
+          perLevel: 25,
         },
       ],
     },
@@ -38,8 +49,10 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "duration",
-          label: "+1s Duration",
+          id: "description",
+          label: "+%1s Duration",
+          baseValue: 1,
+          perLevel: 1,
         },
       ],
     },
@@ -50,9 +63,11 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
-            "When Stoneform ends it deals 387 Strike Damage ine a 2.5m radius",
+            "When Stoneform ends it deals %1 Strike Damage ine a %2m radius",
+          baseValue: [692, 2.5],
+          perLevel: [115, 0.5],
         },
       ],
     },
@@ -63,9 +78,11 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "damage",
+          id: "description",
           label:
-            "While active deals 153 Strike Damage every second in a 4m radius",
+            "While active deals %1 Strike Damage every second in a %2m radius",
+          baseValue: [269, 4],
+          perLevel: [77, 0.5],
         },
       ],
     },
@@ -76,8 +93,10 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "retaliation",
-          label: "While active grands you: +131 Strike Retaliation",
+          id: "description",
+          label: "While active grands you: +%1 Strike Retaliation",
+          baseValue: 231,
+          perLevel: 77,
         },
       ],
     },
@@ -88,9 +107,11 @@ export const stoneForm: Active = {
       cost: 2,
       perks: [
         {
-          id: "overload",
+          id: "description",
           label:
             "On use cleanse 30 Overload, recover 10 Energy for every Overload cleansed",
+          baseValue: 30,
+          perLevel: 30,
         },
       ],
     },
@@ -101,11 +122,11 @@ export const stoneForm: Active = {
       cost: 1,
       perks: [
         {
-          id: "channel",
+          id: "description",
           label: "You can channel other abilitiers during Stoneform",
         },
         {
-          id: "damage-reduction",
+          id: "description-2",
           label: "50% less Damage reduction",
         },
       ],
